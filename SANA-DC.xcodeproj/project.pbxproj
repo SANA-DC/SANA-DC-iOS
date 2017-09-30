@@ -12,10 +12,10 @@
 		0DB3A77B1F7D5DE400B4A519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A77A1F7D5DE400B4A519 /* Assets.xcassets */; };
 		0DB3A77E1F7D5DE400B4A519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A77C1F7D5DE400B4A519 /* LaunchScreen.storyboard */; };
 		0DB3A7881F7D642B00B4A519 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7871F7D642B00B4A519 /* WelcomeViewController.swift */; };
-		0DB3A78A1F7D644200B4A519 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7891F7D644200B4A519 /* AgendaViewController.swift */; };
 		0DB3A78E1F7DA31400B4A519 /* Optimist_Bd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A78D1F7DA10D00B4A519 /* Optimist_Bd.ttf */; };
 		0DB3A78F1F7DA31400B4A519 /* Optimist_It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A78B1F7DA10B00B4A519 /* Optimist_It.ttf */; };
 		0DB3A7901F7DA31400B4A519 /* Optimist_Rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A78C1F7DA10C00B4A519 /* Optimist_Rg.ttf */; };
+		0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7921F7F028200B4A519 /* AgendaTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,11 @@
 		0DB3A77D1F7D5DE400B4A519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DB3A77F1F7D5DE400B4A519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DB3A7871F7D642B00B4A519 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		0DB3A7891F7D644200B4A519 /* AgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 		0DB3A78B1F7DA10B00B4A519 /* Optimist_It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Optimist_It.ttf; sourceTree = "<group>"; };
 		0DB3A78C1F7DA10C00B4A519 /* Optimist_Rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Optimist_Rg.ttf; sourceTree = "<group>"; };
 		0DB3A78D1F7DA10D00B4A519 /* Optimist_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Optimist_Bd.ttf; sourceTree = "<group>"; };
+		0DB3A7911F7F01BE00B4A519 /* SANA_DC.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SANA_DC.json; sourceTree = "<group>"; };
+		0DB3A7921F7F028200B4A519 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				0DB3A77F1F7D5DE400B4A519 /* Info.plist */,
+				0DB3A7911F7F01BE00B4A519 /* SANA_DC.json */,
+				0DB3A7771F7D5DE400B4A519 /* Main.storyboard */,
 				0DB3A7861F7D641000B4A519 /* ViewControllers */,
 				0DB3A7851F7D632E00B4A519 /* Suppporting Files */,
 			);
@@ -86,8 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				0DB3A7871F7D642B00B4A519 /* WelcomeViewController.swift */,
-				0DB3A7891F7D644200B4A519 /* AgendaViewController.swift */,
-				0DB3A7771F7D5DE400B4A519 /* Main.storyboard */,
+				0DB3A7921F7F028200B4A519 /* AgendaTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -167,9 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */,
 				0DB3A7721F7D5DE400B4A519 /* AppDelegate.swift in Sources */,
 				0DB3A7881F7D642B00B4A519 /* WelcomeViewController.swift in Sources */,
-				0DB3A78A1F7D644200B4A519 /* AgendaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
