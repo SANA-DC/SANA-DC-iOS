@@ -25,6 +25,19 @@ class AgendaTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return section == 0 ? "WEDNESDAY, SEPTEMBER 27" : "THURSDAY, SEPTEMBER 28"
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        
+      //  view.tintColor = .white
+        
+        let header : UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = UIColor.lightGray
+        header.textLabel?.font = UIFont(name: "Optimist-Regular", size: 17.0)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
