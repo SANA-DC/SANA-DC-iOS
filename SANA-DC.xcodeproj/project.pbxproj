@@ -16,6 +16,7 @@
 		0DB3A78F1F7DA31400B4A519 /* Optimist_It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A78B1F7DA10B00B4A519 /* Optimist_It.ttf */; };
 		0DB3A7901F7DA31400B4A519 /* Optimist_Rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A78C1F7DA10C00B4A519 /* Optimist_Rg.ttf */; };
 		0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7921F7F028200B4A519 /* AgendaTableViewController.swift */; };
+		F15456D81DDE8E2819FEF6FC /* Pods_SANA_DC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB4F877929BAD892694821F /* Pods_SANA_DC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,10 @@
 		0DB3A78D1F7DA10D00B4A519 /* Optimist_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Optimist_Bd.ttf; sourceTree = "<group>"; };
 		0DB3A7911F7F01BE00B4A519 /* SANA_DC.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SANA_DC.json; sourceTree = "<group>"; };
 		0DB3A7921F7F028200B4A519 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
+		0DB3A7941F832EAF00B4A519 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		826B44A71588F9247D08FD70 /* Pods-SANA-DC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANA-DC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC.release.xcconfig"; sourceTree = "<group>"; };
+		D3FBAFA71070AD94F2FA233C /* Pods-SANA-DC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANA-DC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC.debug.xcconfig"; sourceTree = "<group>"; };
+		DDB4F877929BAD892694821F /* Pods_SANA_DC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SANA_DC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15456D81DDE8E2819FEF6FC /* Pods_SANA_DC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +55,8 @@
 			children = (
 				0DB3A7701F7D5DE400B4A519 /* SANA-DC */,
 				0DB3A76F1F7D5DE400B4A519 /* Products */,
+				3037B8FFEEDD04EF1A390645 /* Pods */,
+				6D282204CA540BF62F289D8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +83,7 @@
 		0DB3A7851F7D632E00B4A519 /* Suppporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0DB3A7941F832EAF00B4A519 /* GoogleService-Info.plist */,
 				0DB3A78D1F7DA10D00B4A519 /* Optimist_Bd.ttf */,
 				0DB3A78B1F7DA10B00B4A519 /* Optimist_It.ttf */,
 				0DB3A78C1F7DA10C00B4A519 /* Optimist_Rg.ttf */,
@@ -94,6 +103,23 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		3037B8FFEEDD04EF1A390645 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3FBAFA71070AD94F2FA233C /* Pods-SANA-DC.debug.xcconfig */,
+				826B44A71588F9247D08FD70 /* Pods-SANA-DC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D282204CA540BF62F289D8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDB4F877929BAD892694821F /* Pods_SANA_DC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DB3A7821F7D5DE400B4A519 /* Build configuration list for PBXNativeTarget "SANA-DC" */;
 			buildPhases = (
+				8AD43E2ECE7E0D3DE02589DA /* [CP] Check Pods Manifest.lock */,
 				0DB3A76A1F7D5DE400B4A519 /* Sources */,
 				0DB3A76B1F7D5DE400B4A519 /* Frameworks */,
 				0DB3A76C1F7D5DE400B4A519 /* Resources */,
+				8B1DDEBC7E6099340650A2D5 /* [CP] Embed Pods Frameworks */,
+				001666E9E55C858410BCF90D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +192,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		001666E9E55C858410BCF90D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD43E2ECE7E0D3DE02589DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B1DDEBC7E6099340650A2D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DB3A76A1F7D5DE400B4A519 /* Sources */ = {
@@ -306,6 +383,7 @@
 		};
 		0DB3A7831F7D5DE400B4A519 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FBAFA71070AD94F2FA233C /* Pods-SANA-DC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +400,7 @@
 		};
 		0DB3A7841F7D5DE400B4A519 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 826B44A71588F9247D08FD70 /* Pods-SANA-DC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
