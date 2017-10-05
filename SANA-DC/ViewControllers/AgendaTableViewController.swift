@@ -10,6 +10,9 @@ import UIKit
 
 class AgendaTableViewController: UITableViewController {
 
+    let dataManager = DataManager.sharedInstance
+    var data:ScheduleResponse?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +21,8 @@ class AgendaTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        data = dataManager.schedule
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,8 +51,11 @@ class AgendaTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 1
+        if let data = data{
+            return section == 0 ? data.day1.count : data.day2.count
+        } else {
+            return 0
+        }
     }
 
     
@@ -55,6 +63,8 @@ class AgendaTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
+        
+        
 
         return cell
     }
