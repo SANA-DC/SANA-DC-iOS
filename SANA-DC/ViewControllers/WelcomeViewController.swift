@@ -16,11 +16,7 @@ class WelcomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        DataManager.sharedInstance.getSchedule(success: { (test) in
-            
-        }) { (error) in
-            
-        }
+       
     }
 
     override func didReceiveMemoryWarning() {

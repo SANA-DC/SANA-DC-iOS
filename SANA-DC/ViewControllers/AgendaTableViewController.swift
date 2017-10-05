@@ -10,8 +10,8 @@ import UIKit
 
 class AgendaTableViewController: UITableViewController {
 
-    let dataManager = DataManager.sharedInstance
     var data:ScheduleResponse?
+    var spinner: UIActivityIndicatorView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,17 +21,30 @@ class AgendaTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-        data = dataManager.schedule
+        setupSpinner()
+        DataManager.sharedInstance.getSchedule(success: { [weak self](data) in
+            self?.data = data
+            DispatchQueue.main.async {
+                self?.stopSpinner()
+                self?.tableView.reloadData()
+            }
+        }) { (error) in
+            
+        }
     }
 
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return section == 0 ? "WEDNESDAY, SEPTEMBER 27" : "THURSDAY, SEPTEMBER 28"
+        if self.data != nil{
+            return section == 0 ? "WEDNESDAY, SEPTEMBER 27" : "THURSDAY, SEPTEMBER 28"
+        } else {
+            return ""
+        }
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
@@ -46,8 +59,11 @@ class AgendaTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 2
+        if self.data != nil{
+            return 2
+        } else {
+            return 0
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -118,4 +134,17 @@ class AgendaTableViewController: UITableViewController {
     }
     */
 
+    
+    func setupSpinner(){
+        spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height:40))
+        spinner?.activityIndicatorViewStyle = .whiteLarge
+        spinner?.center = CGPoint(x:UIScreen.main.bounds.size.width / 2, y:UIScreen.main.bounds.size.height / 2)
+        self.view.addSubview(spinner!)
+        spinner?.hidesWhenStopped = true
+        spinner?.startAnimating()
+    }
+    
+    func stopSpinner(){
+        spinner?.stopAnimating()
+    }
 }

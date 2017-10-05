@@ -25,7 +25,7 @@ class DataManager:NSObject{
     
     
     
-    func getSchedule(success: (ScheduleResponse) -> Void, failure:(Error) -> Void) {
+    func getSchedule(success: @escaping (ScheduleResponse) -> Void, failure:(Error) -> Void) {
        
         let urlString = "https://firebasestorage.googleapis.com/v0/b/sana-dc.appspot.com/o/SANA_DC.json?alt=media&token=c445d7bc-70f4-43d2-8818-cfa40cad06b2"
         let urlReuest = URLRequest(url: URL(string: urlString)!)
@@ -54,6 +54,7 @@ class DataManager:NSObject{
                     }
                 }
                 self.schedule = ScheduleResponse(day1: day1Schedule, day2: day2Schedule)
+                success(self.schedule!)
             }
         }
         task.resume()
