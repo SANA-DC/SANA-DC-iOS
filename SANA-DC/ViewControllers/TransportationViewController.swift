@@ -1,22 +1,19 @@
 //
-//  ScheduleDetailViewController.swift
+//  TransportationViewController.swift
 //  SANA-DC
 //
-//  Created by Saleem Sangi on 10/6/17.
+//  Created by Saleem Sangi on 10/8/17.
 //  Copyright © 2017 Saleem Sangi. All rights reserved.
 //
 
 import UIKit
 
-class ScheduleDetailViewController: UIViewController {
+class TransportationViewController: UIViewController {
 
-    //Attractions, transportation
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.navigationItem.title = "Info"
     }
 
     override func didReceiveMemoryWarning() {

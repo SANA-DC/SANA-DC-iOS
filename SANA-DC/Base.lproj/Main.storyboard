@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -188,12 +187,16 @@
                     </tabBar>
                     <connections>
                         <segue destination="Tkb-Sz-GNz" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="D7y-Zt-LUp" kind="relationship" relationship="viewControllers" id="Fud-11-uJp"/>
+                        <segue destination="auq-6r-OMs" kind="relationship" relationship="viewControllers" id="Jgi-LF-v3Y"/>
+                        <segue destination="KOX-Gg-1KK" kind="relationship" relationship="viewControllers" id="WSN-iX-3gr"/>
+                        <segue destination="o99-jI-Va0" kind="relationship" relationship="viewControllers" id="iC7-DT-t12"/>
+                        <segue destination="GPO-xs-Ybi" kind="relationship" relationship="viewControllers" id="eeW-DH-TKA"/>
+                        <segue destination="D7y-Zt-LUp" kind="relationship" relationship="viewControllers" id="oqO-ak-0Ad"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-1442" y="910"/>
         </scene>
         <!--Agenda-->
         <scene sceneID="aNK-QI-6cz">
@@ -269,7 +272,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G08-qE-m8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524" y="384.55772113943033"/>
+            <point key="canvasLocation" x="1524" y="3690"/>
         </scene>
         <!--Schedule Detail View Controller-->
         <scene sceneID="ECD-sQ-FjI">
@@ -385,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffc-46-mNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2309.5999999999999" y="384.55772113943033"/>
+            <point key="canvasLocation" x="2310" y="3690"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="NbD-Pw-Tqa">
@@ -436,7 +439,198 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAV-hS-oI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="385"/>
+            <point key="canvasLocation" x="748" y="3690"/>
+        </scene>
+        <!--Hotel-->
+        <scene sceneID="xVy-Ni-hcB">
+            <objects>
+                <viewController id="mE4-YY-bu8" customClass="HotelViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XDN-ee-9sz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5I-fn-5tD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6fz-TO-0Ne">
+                                <rect key="frame" x="169" y="322.5" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="LK7-Le-hHI"/>
+                                    <constraint firstAttribute="height" constant="37" id="Ntq-tb-YIL"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mos-aD-cY1" firstAttribute="bottom" secondItem="h5I-fn-5tD" secondAttribute="bottom" id="0cX-dD-bXQ"/>
+                            <constraint firstItem="6fz-TO-0Ne" firstAttribute="centerX" secondItem="mos-aD-cY1" secondAttribute="centerX" id="1oa-tj-FkM"/>
+                            <constraint firstItem="h5I-fn-5tD" firstAttribute="leading" secondItem="mos-aD-cY1" secondAttribute="leading" id="8oG-hg-gf2"/>
+                            <constraint firstItem="h5I-fn-5tD" firstAttribute="top" secondItem="mos-aD-cY1" secondAttribute="top" id="UIG-RH-uUS"/>
+                            <constraint firstItem="6fz-TO-0Ne" firstAttribute="centerY" secondItem="mos-aD-cY1" secondAttribute="centerY" id="VMf-cD-B0O"/>
+                            <constraint firstItem="mos-aD-cY1" firstAttribute="trailing" secondItem="h5I-fn-5tD" secondAttribute="trailing" id="YAC-nT-xEe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mos-aD-cY1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hotel" id="4UC-r6-Mff"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="6fz-TO-0Ne" id="NI4-g7-jAy"/>
+                        <outlet property="webView" destination="h5I-fn-5tD" id="2m0-jJ-twI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ud2-61-9LF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="492"/>
+        </scene>
+        <!--SANA-->
+        <scene sceneID="gN9-FF-loi">
+            <objects>
+                <viewController id="MAx-j7-GNa" customClass="SANARegistrationViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mVg-G6-PSr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="aQN-fK-pu2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SANA" id="imM-fN-WZ7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQo-CE-rVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="1296"/>
+        </scene>
+        <!--Hotel-->
+        <scene sceneID="Lxe-4I-9wU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="auq-6r-OMs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hotel" id="UB9-79-XK2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ami-Qp-Dnf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mE4-YY-bu8" kind="relationship" relationship="rootViewController" id="zx0-gW-feP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPC-a6-zb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="492"/>
+        </scene>
+        <!--SANA-->
+        <scene sceneID="6PT-jE-eeg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KOX-Gg-1KK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SANA" id="qRF-Lm-9Og"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4On-dp-6K0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MAx-j7-GNa" kind="relationship" relationship="rootViewController" id="td1-zD-1r5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fI-f1-JK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="1296"/>
+        </scene>
+        <!--Transportation-->
+        <scene sceneID="fET-Tj-o43">
+            <objects>
+                <viewController id="NPP-PT-PPH" customClass="TransportationViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GFy-Na-lKV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JaS-fO-Hmr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transportation" id="vqc-eq-to8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fe7-4Z-XEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="2042"/>
+        </scene>
+        <!--Transportation-->
+        <scene sceneID="FSz-Gh-fKr">
+            <objects>
+                <viewController id="eXT-Zj-04r" customClass="AttractionsViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f2j-Ci-ugu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="aU0-p5-6HP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transportation" id="Cj5-vM-dsU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1B-6F-K0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="2877"/>
+        </scene>
+        <!--Transportation-->
+        <scene sceneID="DCF-Wx-kqJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o99-jI-Va0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Transportation" id="Pss-Fr-hYs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L5M-9n-H7r">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NPP-PT-PPH" kind="relationship" relationship="rootViewController" id="bfu-Uj-j5C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKz-aK-j6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="2043"/>
+        </scene>
+        <!--Attractions-->
+        <scene sceneID="DtB-QS-D9C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GPO-xs-Ybi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Attractions" id="0KP-BU-OfK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lkf-3N-Hah">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eXT-Zj-04r" kind="relationship" relationship="rootViewController" id="eAO-Cc-LlF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4g-AK-atb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="2877"/>
         </scene>
     </scenes>
     <resources>
