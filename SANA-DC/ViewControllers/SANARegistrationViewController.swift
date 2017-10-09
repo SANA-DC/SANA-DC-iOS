@@ -7,18 +7,30 @@
 //
 
 import UIKit
+import WebKit
 
-class SANARegistrationViewController: UIViewController {
+class SANARegistrationViewController: UIViewController,WKNavigationDelegate {
 
+    @IBOutlet weak var activityInd: UIActivityIndicatorView!
+    @IBOutlet weak var webView: WKWebView!
+    
+    let urlString = "https://sanaonline.org/product/convention-registration-adult-member/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        webView.navigationDelegate = self
+        self.webView.load(URLRequest(url: URL(string: urlString)!))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.activityInd.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        self.activityInd.startAnimating()
     }
     
 

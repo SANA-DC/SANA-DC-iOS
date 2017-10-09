@@ -57,5 +57,7 @@
 		<string>Optimist_It.ttf</string>
 		<string>Optimist_Rg.ttf</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

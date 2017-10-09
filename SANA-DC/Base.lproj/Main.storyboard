@@ -152,7 +152,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uAn-zN-SnD" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="20q-Y0-rfe"/>
                             <constraint firstItem="Rtv-DZ-Keo" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="HUL-Sp-scu"/>
@@ -441,16 +441,16 @@
             </objects>
             <point key="canvasLocation" x="748" y="3690"/>
         </scene>
-        <!--Hotel-->
+        <!--Hotel Info-->
         <scene sceneID="xVy-Ni-hcB">
             <objects>
                 <viewController id="mE4-YY-bu8" customClass="HotelViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDN-ee-9sz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5I-fn-5tD">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -458,7 +458,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6fz-TO-0Ne">
-                                <rect key="frame" x="169" y="322.5" width="37" height="37"/>
+                                <rect key="frame" x="169" y="258.5" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="LK7-Le-hHI"/>
                                     <constraint firstAttribute="height" constant="37" id="Ntq-tb-YIL"/>
@@ -476,7 +476,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mos-aD-cY1"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hotel" id="4UC-r6-Mff"/>
+                    <navigationItem key="navigationItem" title="Hotel Info" id="4UC-r6-Mff"/>
                     <connections>
                         <outlet property="activityIndicator" destination="6fz-TO-0Ne" id="NI4-g7-jAy"/>
                         <outlet property="webView" destination="h5I-fn-5tD" id="2m0-jJ-twI"/>
@@ -486,17 +486,46 @@
             </objects>
             <point key="canvasLocation" x="1524" y="492"/>
         </scene>
-        <!--SANA-->
+        <!--SANA Registration-->
         <scene sceneID="gN9-FF-loi">
             <objects>
                 <viewController id="MAx-j7-GNa" customClass="SANARegistrationViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mVg-G6-PSr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEr-QR-TFc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="neW-qk-P6u">
+                                <rect key="frame" x="169" y="258.5" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="7lu-uQ-NxT"/>
+                                    <constraint firstAttribute="height" constant="37" id="naO-ZD-YJM"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="neW-qk-P6u" firstAttribute="centerY" secondItem="aQN-fK-pu2" secondAttribute="centerY" id="8cQ-Bd-Y4z"/>
+                            <constraint firstItem="uEr-QR-TFc" firstAttribute="leading" secondItem="aQN-fK-pu2" secondAttribute="leading" id="T1f-5R-QoO"/>
+                            <constraint firstItem="uEr-QR-TFc" firstAttribute="top" secondItem="aQN-fK-pu2" secondAttribute="top" id="gmX-fR-hSd"/>
+                            <constraint firstItem="aQN-fK-pu2" firstAttribute="trailing" secondItem="uEr-QR-TFc" secondAttribute="trailing" id="o4g-qp-OR8"/>
+                            <constraint firstItem="aQN-fK-pu2" firstAttribute="bottom" secondItem="uEr-QR-TFc" secondAttribute="bottom" id="oCe-Ub-L5y"/>
+                            <constraint firstItem="neW-qk-P6u" firstAttribute="centerX" secondItem="aQN-fK-pu2" secondAttribute="centerX" id="uIk-kK-CQP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aQN-fK-pu2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SANA" id="imM-fN-WZ7"/>
+                    <navigationItem key="navigationItem" title="SANA Registration" id="imM-fN-WZ7"/>
+                    <connections>
+                        <outlet property="activityInd" destination="neW-qk-P6u" id="qIP-Vz-KKZ"/>
+                        <outlet property="webView" destination="uEr-QR-TFc" id="Zrf-Fx-y8w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQo-CE-rVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -508,7 +537,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="auq-6r-OMs" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Hotel" id="UB9-79-XK2"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ami-Qp-Dnf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ami-Qp-Dnf">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -533,7 +562,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KOX-Gg-1KK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="SANA" id="qRF-Lm-9Og"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4On-dp-6K0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="4On-dp-6K0">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -552,23 +581,7 @@
             </objects>
             <point key="canvasLocation" x="748" y="1296"/>
         </scene>
-        <!--Transportation-->
-        <scene sceneID="fET-Tj-o43">
-            <objects>
-                <viewController id="NPP-PT-PPH" customClass="TransportationViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GFy-Na-lKV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="JaS-fO-Hmr"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Transportation" id="vqc-eq-to8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fe7-4Z-XEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1524" y="2042"/>
-        </scene>
-        <!--Transportation-->
+        <!--Attractions-->
         <scene sceneID="FSz-Gh-fKr">
             <objects>
                 <viewController id="eXT-Zj-04r" customClass="AttractionsViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
@@ -578,7 +591,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="aU0-p5-6HP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Transportation" id="Cj5-vM-dsU"/>
+                    <navigationItem key="navigationItem" title="Attractions" id="Cj5-vM-dsU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1B-6F-K0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -601,12 +614,61 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="NPP-PT-PPH" kind="relationship" relationship="rootViewController" id="bfu-Uj-j5C"/>
+                        <segue destination="9Er-UF-NLh" kind="relationship" relationship="rootViewController" id="fxs-i9-5a7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKz-aK-j6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="748" y="2043"/>
+        </scene>
+        <!--Transportation-->
+        <scene sceneID="dHn-Re-6tp">
+            <objects>
+                <tableViewController id="9Er-UF-NLh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4bd-Tv-Z8v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="ohi-hM-2jU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xge-dn-Fzc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xge-dn-Fzc" id="MvQ-ng-hxD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VCG-nO-YbI">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VCG-nO-YbI" id="HRl-qJ-9m9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6zz-8F-FMN">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6zz-8F-FMN" id="3K1-PD-sqg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="9Er-UF-NLh" id="eI2-xT-NhW"/>
+                            <outlet property="delegate" destination="9Er-UF-NLh" id="oMj-zz-lZq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Transportation" id="C4j-6a-fAb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Coi-by-zut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1486" y="2053"/>
         </scene>
         <!--Attractions-->
         <scene sceneID="DtB-QS-D9C">
@@ -620,6 +682,7 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>

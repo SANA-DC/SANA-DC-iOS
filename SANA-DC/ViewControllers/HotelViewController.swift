@@ -11,7 +11,7 @@ import WebKit
 
 class HotelViewController: UIViewController, WKNavigationDelegate{
 
-    let urlString = "https://www.marriott.com/hotels/fact-sheet/travel/wasbn-bethesda-north-marriott-hotel-and-conference-center/"
+    let urlString = "https://www.marriott.com/hotels/travel/wasbn-bethesda-north-marriott-hotel-and-conference-center"
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var webView: WKWebView!
