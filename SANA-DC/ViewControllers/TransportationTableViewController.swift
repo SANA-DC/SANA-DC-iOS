@@ -25,18 +25,20 @@ class TransportationTableViewController: UITableViewController {
 //    }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        view.tintColor = .white
+       // view.tintColor = .white
         let header : UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        header.backgroundColor = .red
+        //header.backgroundColor = .red
         header.textLabel?.textColor = UIColor.lightGray
         header.textLabel?.font = UIFont(name: "Optimist-Regular", size: 17.0)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0{ // Airports
+            self.performSegue(withIdentifier: "ToAirportVC", sender: self)
+        } else if indexPath.section == 2{ // Other Transportation
+            
+        }
     }
-
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
