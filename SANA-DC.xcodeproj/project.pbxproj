@@ -23,6 +23,7 @@
 		0DD3D72D1F8A77FD0076DDB5 /* AttractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D72C1F8A77FD0076DDB5 /* AttractionsViewController.swift */; };
 		0DD3D72F1F8C0DAA0076DDB5 /* TransportationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D72E1F8C0DAA0076DDB5 /* TransportationTableViewController.swift */; };
 		0DD3D7311F8C48240076DDB5 /* AirportDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7301F8C48240076DDB5 /* AirportDetailsViewController.swift */; };
+		0DD3D7341F8E88AA0076DDB5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7331F8E88AA0076DDB5 /* Constants.swift */; };
 		F15456D81DDE8E2819FEF6FC /* Pods_SANA_DC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB4F877929BAD892694821F /* Pods_SANA_DC.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		0DD3D72C1F8A77FD0076DDB5 /* AttractionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewController.swift; sourceTree = "<group>"; };
 		0DD3D72E1F8C0DAA0076DDB5 /* TransportationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationTableViewController.swift; sourceTree = "<group>"; };
 		0DD3D7301F8C48240076DDB5 /* AirportDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailsViewController.swift; sourceTree = "<group>"; };
+		0DD3D7331F8E88AA0076DDB5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		826B44A71588F9247D08FD70 /* Pods-SANA-DC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANA-DC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC.release.xcconfig"; sourceTree = "<group>"; };
 		D3FBAFA71070AD94F2FA233C /* Pods-SANA-DC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANA-DC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC.debug.xcconfig"; sourceTree = "<group>"; };
 		DDB4F877929BAD892694821F /* Pods_SANA_DC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SANA_DC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,12 +87,13 @@
 		0DB3A7701F7D5DE400B4A519 /* SANA-DC */ = {
 			isa = PBXGroup;
 			children = (
-				0DB3A77F1F7D5DE400B4A519 /* Info.plist */,
-				0DB3A7911F7F01BE00B4A519 /* SANA_DC.json */,
-				0DB3A7771F7D5DE400B4A519 /* Main.storyboard */,
+				0DB3A7951F842E4A00B4A519 /* DataManager.swift */,
+				0DD3D7331F8E88AA0076DDB5 /* Constants.swift */,
+				0DD3D7321F8E887A0076DDB5 /* Views */,
 				0DB3A7861F7D641000B4A519 /* ViewControllers */,
 				0DB3A7851F7D632E00B4A519 /* Suppporting Files */,
-				0DB3A7951F842E4A00B4A519 /* DataManager.swift */,
+				0DB3A77F1F7D5DE400B4A519 /* Info.plist */,
+				0DB3A7911F7F01BE00B4A519 /* SANA_DC.json */,
 			);
 			path = "SANA-DC";
 			sourceTree = "<group>";
@@ -122,6 +125,14 @@
 				0DD3D7301F8C48240076DDB5 /* AirportDetailsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0DD3D7321F8E887A0076DDB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3A7771F7D5DE400B4A519 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3037B8FFEEDD04EF1A390645 /* Pods */ = {
@@ -268,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD3D72D1F8A77FD0076DDB5 /* AttractionsViewController.swift in Sources */,
+				0DD3D7341F8E88AA0076DDB5 /* Constants.swift in Sources */,
 				0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */,
 				0DD3D7271F8A76A80076DDB5 /* HotelViewController.swift in Sources */,
 				0DD3D7311F8C48240076DDB5 /* AirportDetailsViewController.swift in Sources */,

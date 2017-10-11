@@ -10,8 +10,6 @@ import UIKit
 import WebKit
 
 class HotelViewController: UIViewController, WKNavigationDelegate{
-
-    let urlString = "https://www.marriott.com/hotels/travel/wasbn-bethesda-north-marriott-hotel-and-conference-center"
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var webView: WKWebView!
@@ -20,7 +18,7 @@ class HotelViewController: UIViewController, WKNavigationDelegate{
 
         // Do any additional setup after loading the view.
         webView.navigationDelegate = self
-        self.webView.load(URLRequest(url: URL(string: urlString)!))
+        self.webView.load(URLRequest(url: URL(string: Constants.URLConstants.hotelURL)!))
     }
 
     

@@ -53,7 +53,7 @@ class AgendaTableViewController: UITableViewController {
         
         let header : UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = UIColor.lightGray
-        header.textLabel?.font = UIFont(name: "Optimist-Regular", size: 17.0)
+        header.textLabel?.font = UIFont(name: Constants.FontsContants.optimistRegular, size: 17.0)
     }
     
     // MARK: - Table view data source

@@ -14,14 +14,12 @@ class SANARegistrationViewController: UIViewController,WKNavigationDelegate {
     @IBOutlet weak var activityInd: UIActivityIndicatorView!
     @IBOutlet weak var webView: WKWebView!
     
-    let urlString = "https://sanaonline.org/product/convention-registration-adult-member/"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         webView.navigationDelegate = self
-        self.webView.load(URLRequest(url: URL(string: urlString)!))
+        self.webView.load(URLRequest(url: URL(string: Constants.FontsContants.optimistRegular)!))
     }
     
     

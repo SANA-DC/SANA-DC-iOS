@@ -29,7 +29,7 @@ class TransportationTableViewController: UITableViewController {
         let header : UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
         //header.backgroundColor = .red
         header.textLabel?.textColor = UIColor.lightGray
-        header.textLabel?.font = UIFont(name: "Optimist-Regular", size: 17.0)
+        header.textLabel?.font = UIFont(name: Constants.FontsContants.optimistRegular, size: 17.0)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
