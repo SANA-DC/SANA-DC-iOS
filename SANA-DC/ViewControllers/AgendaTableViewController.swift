@@ -77,8 +77,14 @@ class AgendaTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AgendaTableViewCell
+        
+        if indexPath.section == 0{
+            cell.title.text = data?.day1[indexPath.row].name
 
+        } else {
+            cell.title.text = data?.day2[indexPath.row].name
+        }
         // Configure the cell...
         
         

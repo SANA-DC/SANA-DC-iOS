@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7859CE1F8E99B4007EC1A6 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */; };
 		0DB3A7721F7D5DE400B4A519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7711F7D5DE400B4A519 /* AppDelegate.swift */; };
 		0DB3A7791F7D5DE400B4A519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A7771F7D5DE400B4A519 /* Main.storyboard */; };
 		0DB3A77B1F7D5DE400B4A519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A77A1F7D5DE400B4A519 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		0DB3A76E1F7D5DE400B4A519 /* SANA-DC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SANA-DC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB3A7711F7D5DE400B4A519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DB3A7781F7D5DE400B4A519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				0DB3A7771F7D5DE400B4A519 /* Main.storyboard */,
+				0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				0DD3D7311F8C48240076DDB5 /* AirportDetailsViewController.swift in Sources */,
 				0DD3D72F1F8C0DAA0076DDB5 /* TransportationTableViewController.swift in Sources */,
 				0DB3A7961F842E4A00B4A519 /* DataManager.swift in Sources */,
+				0D7859CE1F8E99B4007EC1A6 /* AgendaTableViewCell.swift in Sources */,
 				0DB3A7721F7D5DE400B4A519 /* AppDelegate.swift in Sources */,
 				0DD3D7291F8A76D90076DDB5 /* SANARegistrationViewController.swift in Sources */,
 				0DB3A7881F7D642B00B4A519 /* WelcomeViewController.swift in Sources */,
