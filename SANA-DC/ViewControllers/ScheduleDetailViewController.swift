@@ -10,7 +10,6 @@ import UIKit
 
 class ScheduleDetailViewController: UIViewController {
 
-    //Attractions, transportation
     override func viewDidLoad() {
         super.viewDidLoad()
 

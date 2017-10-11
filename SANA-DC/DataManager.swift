@@ -25,10 +25,9 @@ class DataManager:NSObject{
     
     
     
-    func getSchedule(success: @escaping (ScheduleResponse) -> Void, failure:(Error) -> Void) {
+    func getSchedule(success: @escaping (ScheduleResponse) -> Void, failure:@escaping (Error) -> Void) {
        
-        let urlString = "https://firebasestorage.googleapis.com/v0/b/sana-dc.appspot.com/o/SANA_DC.json?alt=media&token=c445d7bc-70f4-43d2-8818-cfa40cad06b2"
-        let urlReuest = URLRequest(url: URL(string: urlString)!)
+        let urlReuest = URLRequest(url: URL(string: Constants.URLConstants.firebaseURL)!)
         
         let task = URLSession.shared.dataTask(with: urlReuest) { (data, urlResponse, error) in
             if error == nil{
@@ -55,6 +54,8 @@ class DataManager:NSObject{
                 }
                 self.schedule = ScheduleResponse(day1: day1Schedule, day2: day2Schedule)
                 success(self.schedule!)
+            } else {
+                failure(error!)
             }
         }
         task.resume()
@@ -73,7 +74,7 @@ class ScheduleResponse:NSObject{
     }
     
 }
-//["name": Sindh Development, "location": Room 105, "speaker": Ali Abro, "endTime": 10:00 am, "startTime": 9:00 am, "sessionDescription": Come and learn about new sindh development projects, "totalTime": 60 min]
+
 class Day1: NSObject{
     var name:String?
     var location:String?
@@ -95,16 +96,6 @@ class Day1: NSObject{
         self.totalTime = dictonary["totalTime"]
 
     }
-//    init(name:String, startTime:String, endTime:String, totalTime:String, location:String, speaker:String, description:String) {
-//        self.name = name
-//        self.endTime = endTime
-//        self.startTime = startTime
-//        self.totalTime = totalTime
-//        self.description = description
-//        self.location = location
-//        self.speaker = speaker
-
-  //  }
 }
 
 class Day2: NSObject{

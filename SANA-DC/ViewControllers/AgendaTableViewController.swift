@@ -29,7 +29,8 @@ class AgendaTableViewController: UITableViewController {
                 self?.tableView.reloadData()
             }
         }) { (error) in
-            
+            self.stopSpinner()
+            //TODO: Show an alert
         }
     }
 
@@ -43,7 +44,7 @@ class AgendaTableViewController: UITableViewController {
         if self.data != nil{
             return section == 0 ? "WEDNESDAY, SEPTEMBER 27" : "THURSDAY, SEPTEMBER 28"
         } else {
-            return ""
+            return nil
         }
     }
     
