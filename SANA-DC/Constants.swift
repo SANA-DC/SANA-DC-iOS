@@ -11,6 +11,7 @@ import Foundation
 struct Constants {
     struct FontsContants {
         static let optimistRegular = "Optimist-Regular"
+        static let optimistBold = "Optimist-Bold"
     }
     
     struct URLConstants {

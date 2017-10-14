@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D7859CE1F8E99B4007EC1A6 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */; };
+		0D9E230B1F91A9C200D2F6C6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */; };
 		0DB3A7721F7D5DE400B4A519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7711F7D5DE400B4A519 /* AppDelegate.swift */; };
 		0DB3A7791F7D5DE400B4A519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A7771F7D5DE400B4A519 /* Main.storyboard */; };
 		0DB3A77B1F7D5DE400B4A519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A77A1F7D5DE400B4A519 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		0DB3A76E1F7D5DE400B4A519 /* SANA-DC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SANA-DC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB3A7711F7D5DE400B4A519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DB3A7781F7D5DE400B4A519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				0DD3D72C1F8A77FD0076DDB5 /* AttractionsViewController.swift */,
 				0DD3D72E1F8C0DAA0076DDB5 /* TransportationTableViewController.swift */,
 				0DD3D7301F8C48240076DDB5 /* AirportDetailsViewController.swift */,
+				0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				0D7859CE1F8E99B4007EC1A6 /* AgendaTableViewCell.swift in Sources */,
 				0DB3A7721F7D5DE400B4A519 /* AppDelegate.swift in Sources */,
 				0DD3D7291F8A76D90076DDB5 /* SANARegistrationViewController.swift in Sources */,
+				0D9E230B1F91A9C200D2F6C6 /* TabBarViewController.swift in Sources */,
 				0DB3A7881F7D642B00B4A519 /* WelcomeViewController.swift in Sources */,
 				0DD3D7251F8831E90076DDB5 /* ScheduleDetailViewController.swift in Sources */,
 			);

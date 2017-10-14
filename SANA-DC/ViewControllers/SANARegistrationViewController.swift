@@ -19,7 +19,7 @@ class SANARegistrationViewController: UIViewController,WKNavigationDelegate {
         
         // Do any additional setup after loading the view.
         webView.navigationDelegate = self
-        self.webView.load(URLRequest(url: URL(string: Constants.FontsContants.optimistRegular)!))
+        self.webView.load(URLRequest(url: URL(string: Constants.URLConstants.sanaURL)!))
     }
     
     
