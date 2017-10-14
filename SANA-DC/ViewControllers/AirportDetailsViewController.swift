@@ -8,12 +8,48 @@
 
 import UIKit
 
-class AirportDetailsViewController: UIViewController {
+enum Airports {
+    case DCA
+    case IAD
+    case BWI
+}
 
+class AirportDetailsViewController: UIViewController {
+    
+    //IBOutlest
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var phone: UITextView!
+    @IBOutlet weak var estimatedTaxiFare: UILabel!
+    @IBOutlet weak var hotelDirection: UILabel!
+    
+    //Porperties
+    var airport:Airports?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        guard let airport = self.airport else {
+            return
+        }
+        
+        switch airport {
+        case .BWI:
+            name.text = "Baltimore/Washington International Thurgood Marshall Airport - BWI"
+            phone.text = "Airport Phone: +1 410 859 7111"
+            estimatedTaxiFare.text = "Estimated taxi fare: 70 USD  (one way)"
+            hotelDirection.text = "Hotel direction: 37.6 miles SW"
+        case .DCA:
+            name.text = "Ronald Reagan Washington National Airport - DCA"
+            phone.text = "Airport Phone: +1 703 417 8000"
+            estimatedTaxiFare.text = "Estimated taxi fare: 55 USD  (one way)"
+            hotelDirection.text = "Hotel direction: 23 miles NW"
+        case .IAD:
+            name.text = "Washington Dulles International Airport - IAD"
+            phone.text = "Airport Phone: +1 703 572 2700"
+            estimatedTaxiFare.text = "Estimated taxi fare: 60 USD  (one way)"
+            hotelDirection.text = "Hotel direction: 25 miles NE"
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

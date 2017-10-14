@@ -10,6 +10,8 @@ import UIKit
 
 class TransportationTableViewController: UITableViewController {
 
+    var airportSelection = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,6 +36,7 @@ class TransportationTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0{ // Airports
+            airportSelection = indexPath.row
             self.performSegue(withIdentifier: "ToAirportVC", sender: self)
         } else if indexPath.section == 2{ // Other Transportation
             
@@ -96,14 +99,25 @@ class TransportationTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ToAirportVC"{
+            let airportDetailVC = segue.destination as? AirportDetailsViewController
+            switch airportSelection{
+            case 0:
+                airportDetailVC?.airport = Airports.IAD
+            case 1:
+                airportDetailVC?.airport = Airports.DCA
+            case 2:
+                airportDetailVC?.airport = Airports.BWI
+            default:
+                break
+            }
+        }
+            
     }
-    */
+ 
 
 }
