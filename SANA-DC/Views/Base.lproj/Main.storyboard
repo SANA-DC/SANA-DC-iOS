@@ -45,7 +45,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location: Washington DC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiQ-4R-cmu">
-                                                <rect key="frame" x="93" y="86.5" width="188.5" height="22.5"/>
+                                                <rect key="frame" x="93.5" y="86.5" width="188.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -180,10 +180,12 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" customClass="TabBarViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="Tkb-Sz-GNz" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -397,7 +399,7 @@
         <scene sceneID="NbD-Pw-Tqa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tkb-Sz-GNz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Welcome" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="info" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="6Ya-Il-ZLw">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -420,7 +422,7 @@
         <scene sceneID="Gmv-a5-8ml">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D7y-Zt-LUp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Agenda" id="6mC-82-INq"/>
+                    <tabBarItem key="tabBarItem" title="Agenda" image="Schedule" id="6mC-82-INq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="eaw-aL-18K">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -539,7 +541,9 @@
         <scene sceneID="Lxe-4I-9wU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="auq-6r-OMs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hotel" id="UB9-79-XK2"/>
+                    <tabBarItem key="tabBarItem" title="Hotel" image="skyscraper" id="UB9-79-XK2">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ami-Qp-Dnf">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -605,7 +609,7 @@
         <scene sceneID="DCF-Wx-kqJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o99-jI-Va0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Transportation" id="Pss-Fr-hYs"/>
+                    <tabBarItem key="tabBarItem" title="Transportation" image="Transportation" id="Pss-Fr-hYs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L5M-9n-H7r">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -645,7 +649,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Washington Dulles International Airport - IAD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9O-fz-Tmx">
-                                                    <rect key="frame" x="8" y="12.5" width="326" height="44.5"/>
+                                                    <rect key="frame" x="8" y="13" width="326" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -667,7 +671,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ronald Reagan Washington National Airport - DCA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oj-U0-7Qh">
-                                                    <rect key="frame" x="8" y="12.5" width="326" height="44.5"/>
+                                                    <rect key="frame" x="8" y="13" width="326" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -689,7 +693,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baltimore/Washington International Thurgood Marshall Airport - BWI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoB-Rr-xSb">
-                                                    <rect key="frame" x="8" y="12.5" width="326" height="44.5"/>
+                                                    <rect key="frame" x="8" y="13" width="326" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -715,7 +719,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On-site parking, fee: 15 USD daily" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh4-pq-5DC">
-                                                    <rect key="frame" x="8" y="23.5" width="359" height="22.5"/>
+                                                    <rect key="frame" x="8" y="24" width="359" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -737,7 +741,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off-site parking, fee: 15 USD daily" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJf-33-ybc">
-                                                    <rect key="frame" x="8" y="23.5" width="359" height="22.5"/>
+                                                    <rect key="frame" x="8" y="24" width="359" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -763,7 +767,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Station" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-gy-LXj">
-                                                    <rect key="frame" x="8" y="23.5" width="326" height="22.5"/>
+                                                    <rect key="frame" x="8" y="24" width="326" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -785,7 +789,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subway Station" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQh-UI-5Ky">
-                                                    <rect key="frame" x="8" y="23.5" width="326" height="22.5"/>
+                                                    <rect key="frame" x="8" y="24" width="326" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -807,7 +811,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Station" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDF-xv-A1X">
-                                                    <rect key="frame" x="8" y="23.5" width="326" height="22.5"/>
+                                                    <rect key="frame" x="8" y="24" width="326" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -829,7 +833,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Rentals" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cC9-BP-vaU">
-                                                    <rect key="frame" x="8" y="23.5" width="326" height="22.5"/>
+                                                    <rect key="frame" x="8" y="24" width="326" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -854,6 +858,8 @@
                     <navigationItem key="navigationItem" title="Transportation" id="C4j-6a-fAb"/>
                     <connections>
                         <segue destination="rEf-LA-lnV" kind="show" identifier="ToAirportVC" id="dUe-2k-BiK"/>
+                        <segue destination="rrD-3W-o8g" kind="show" identifier="OtherTransportation" id="dht-bT-2iy"/>
+                        <segue destination="wJk-OI-4Qe" kind="show" identifier="CarRental" id="aYE-lV-VyO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Coi-by-zut" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -934,7 +940,92 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qP-Td-UhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2221.5999999999999" y="2051.4242878560722"/>
+            <point key="canvasLocation" x="3998" y="1296"/>
+        </scene>
+        <!--Other Transportation Details View Controller-->
+        <scene sceneID="GND-Uh-Jdf">
+            <objects>
+                <viewController id="rrD-3W-o8g" customClass="OtherTransportationDetailsViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ITP-Fz-pYp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzs-Ub-COx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="NhA-9L-RyM">
+                                <rect key="frame" x="169" y="322.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jzs-Ub-COx" firstAttribute="top" secondItem="ITP-Fz-pYp" secondAttribute="top" id="YCK-HG-ecu"/>
+                            <constraint firstItem="NhA-9L-RyM" firstAttribute="centerX" secondItem="1vq-JS-fcS" secondAttribute="centerX" id="fgU-Hk-7IC"/>
+                            <constraint firstItem="1vq-JS-fcS" firstAttribute="bottom" secondItem="Jzs-Ub-COx" secondAttribute="bottom" id="hR8-Ha-s9K"/>
+                            <constraint firstItem="Jzs-Ub-COx" firstAttribute="trailing" secondItem="1vq-JS-fcS" secondAttribute="trailing" id="hzc-Wl-wq2"/>
+                            <constraint firstItem="Jzs-Ub-COx" firstAttribute="leading" secondItem="1vq-JS-fcS" secondAttribute="leading" id="k56-7i-jq7"/>
+                            <constraint firstItem="NhA-9L-RyM" firstAttribute="centerY" secondItem="1vq-JS-fcS" secondAttribute="centerY" id="lQc-fa-TI1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1vq-JS-fcS"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="NhA-9L-RyM" id="ZQv-rc-P3e"/>
+                        <outlet property="webView" destination="Jzs-Ub-COx" id="pOy-bx-b4h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrr-sf-eVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3998" y="2809"/>
+        </scene>
+        <!--Car Rentals View Controller-->
+        <scene sceneID="sqG-6p-nwD">
+            <objects>
+                <viewController id="wJk-OI-4Qe" customClass="CarRentalsViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="30q-kS-9be">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hertz (Nearby)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3g1-cG-rUY">
+                                <rect key="frame" x="16" y="82" width="343" height="29"/>
+                                <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="187-3h-7ez">
+                                <rect key="frame" x="16" y="118.5" width="343" height="76"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="qqk-QY-Tmv"/>
+                                </constraints>
+                                <string key="text">1319 Rockville Pike
+Rockville, Maryland 20852
+Phone: +1-240-314-0640</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="187-3h-7ez" firstAttribute="top" secondItem="3g1-cG-rUY" secondAttribute="bottom" constant="8" id="FFf-NN-RR9"/>
+                            <constraint firstItem="187-3h-7ez" firstAttribute="leading" secondItem="nFW-97-zTU" secondAttribute="leading" constant="16" id="JlS-lP-Fop"/>
+                            <constraint firstItem="3g1-cG-rUY" firstAttribute="top" secondItem="nFW-97-zTU" secondAttribute="top" constant="18" id="aRa-fs-wnp"/>
+                            <constraint firstItem="nFW-97-zTU" firstAttribute="trailing" secondItem="187-3h-7ez" secondAttribute="trailing" constant="16" id="cui-s0-iCl"/>
+                            <constraint firstItem="3g1-cG-rUY" firstAttribute="leading" secondItem="nFW-97-zTU" secondAttribute="leading" constant="16" id="wHn-6Q-5Ii"/>
+                            <constraint firstItem="nFW-97-zTU" firstAttribute="trailing" secondItem="3g1-cG-rUY" secondAttribute="trailing" constant="16" id="zb2-1T-adC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nFW-97-zTU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3I-dD-mGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3997.5999999999999" y="2041.529235382309"/>
         </scene>
         <!--Attractions-->
         <scene sceneID="DtB-QS-D9C">
@@ -963,6 +1054,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="Schedule" width="25" height="25"/>
+        <image name="Transportation" width="25" height="25"/>
+        <image name="info" width="25" height="25"/>
+        <image name="skyscraper" width="25" height="25"/>
     </resources>
 </document>

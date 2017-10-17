@@ -11,6 +11,7 @@ import UIKit
 class TransportationTableViewController: UITableViewController {
 
     var airportSelection = 0
+    var busStation = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,15 @@ class TransportationTableViewController: UITableViewController {
             airportSelection = indexPath.row
             self.performSegue(withIdentifier: "ToAirportVC", sender: self)
         } else if indexPath.section == 2{ // Other Transportation
-            
+            if indexPath.row == 0 || indexPath.row == 1{
+                busStation = true
+                self.performSegue(withIdentifier: "OtherTransportation", sender: self)
+            } else if indexPath.row == 2{
+                busStation = false
+                self.performSegue(withIdentifier: "OtherTransportation", sender: self)
+            }  else {
+                self.performSegue(withIdentifier: "CarRental", sender: self)
+            }
         }
     }
     // MARK: - Table view data source
@@ -115,6 +124,10 @@ class TransportationTableViewController: UITableViewController {
             default:
                 break
             }
+        }
+        else if segue.identifier == "OtherTransportation"{
+            let otherTransportation = segue.destination as? OtherTransportationDetailsViewController
+            otherTransportation?.busStation = self.busStation
         }
             
     }

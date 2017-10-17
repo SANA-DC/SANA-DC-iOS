@@ -22,10 +22,12 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
         
-        self.moreNavigationController.topViewController?.view.backgroundColor = .black
+        tabBar.tintColor = .black
+    self.moreNavigationController.topViewController?.view.backgroundColor = .black
         self.moreNavigationController.navigationBar.barTintColor = .black
-        
+
         self.moreNavigationController.navigationBar.tintColor = .white
         self.moreNavigationController.navigationBar.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor : UIColor.white,

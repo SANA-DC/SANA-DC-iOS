@@ -28,6 +28,7 @@ class AirportDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Airport"
         guard let airport = self.airport else {
             return
         }
