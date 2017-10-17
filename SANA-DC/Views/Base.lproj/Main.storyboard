@@ -568,7 +568,7 @@
         <scene sceneID="6PT-jE-eeg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KOX-Gg-1KK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SANA" id="qRF-Lm-9Og"/>
+                    <tabBarItem key="tabBarItem" title="SANA" image="second" id="qRF-Lm-9Og"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="4On-dp-6K0">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1031,7 +1031,7 @@ Phone: +1-240-314-0640</string>
         <scene sceneID="DtB-QS-D9C">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GPO-xs-Ybi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Attractions" id="0KP-BU-OfK"/>
+                    <tabBarItem key="tabBarItem" title="Attractions" image="attractions" id="0KP-BU-OfK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lkf-3N-Hah">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1056,7 +1056,9 @@ Phone: +1-240-314-0640</string>
     <resources>
         <image name="Schedule" width="25" height="25"/>
         <image name="Transportation" width="25" height="25"/>
+        <image name="attractions" width="25" height="25"/>
         <image name="info" width="25" height="25"/>
+        <image name="second" width="30" height="30"/>
         <image name="skyscraper" width="25" height="25"/>
     </resources>
 </document>
