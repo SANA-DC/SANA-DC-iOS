@@ -24,5 +24,27 @@ struct Constants {
         static let busStation = "https://www.wmata.com/rider-guide/stations/white-flint.cfm"
         
         static let trainStation = "https://www.amtrak.com/stations/rkv"
+        
+        static let strathmore = "https://www.strathmore.org/"
+        
+        static let vietnam = "https://www.nps.gov/vive/index.htm"
+        
+        static let monument = "https://www.nps.gov/wamo/index.htm"
+
+        static let airandspace = "https://airandspace.si.edu/"
+
+        static let temple = "http://ldschurchtemples.org/washington/"
+
+        static let kennedy = "http://www.kennedy-center.org/"
+
+        static let smithsonian = "https://www.si.edu/"
+        
+        static let holocaust = "https://www.ushmm.org/"
+        
+        static let whiteHouse = "https://www.whitehouse.gov/"
+        
+        static let nationalZoo = "https://nationalzoo.si.edu/"
+
+        
     }
 }

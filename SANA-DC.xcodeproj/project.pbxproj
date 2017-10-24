@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D46CA7B1F9ED3760091EA8C /* AttractionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */; };
 		0D7859CE1F8E99B4007EC1A6 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */; };
 		0D9E230B1F91A9C200D2F6C6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */; };
 		0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */; };
@@ -24,14 +25,15 @@
 		0DD3D7251F8831E90076DDB5 /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7241F8831E90076DDB5 /* ScheduleDetailViewController.swift */; };
 		0DD3D7271F8A76A80076DDB5 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7261F8A76A80076DDB5 /* HotelViewController.swift */; };
 		0DD3D7291F8A76D90076DDB5 /* SANARegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7281F8A76D90076DDB5 /* SANARegistrationViewController.swift */; };
-		0DD3D72D1F8A77FD0076DDB5 /* AttractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D72C1F8A77FD0076DDB5 /* AttractionsViewController.swift */; };
 		0DD3D72F1F8C0DAA0076DDB5 /* TransportationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D72E1F8C0DAA0076DDB5 /* TransportationTableViewController.swift */; };
 		0DD3D7311F8C48240076DDB5 /* AirportDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7301F8C48240076DDB5 /* AirportDetailsViewController.swift */; };
 		0DD3D7341F8E88AA0076DDB5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7331F8E88AA0076DDB5 /* Constants.swift */; };
+		0DD5A5241F9ECC4500D4ECD0 /* AttractionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5A5231F9ECC4500D4ECD0 /* AttractionDetailViewController.swift */; };
 		F15456D81DDE8E2819FEF6FC /* Pods_SANA_DC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB4F877929BAD892694821F /* Pods_SANA_DC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsTableViewController.swift; sourceTree = "<group>"; };
 		0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTransportationDetailsViewController.swift; sourceTree = "<group>"; };
@@ -53,10 +55,10 @@
 		0DD3D7241F8831E90076DDB5 /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
 		0DD3D7261F8A76A80076DDB5 /* HotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		0DD3D7281F8A76D90076DDB5 /* SANARegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANARegistrationViewController.swift; sourceTree = "<group>"; };
-		0DD3D72C1F8A77FD0076DDB5 /* AttractionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewController.swift; sourceTree = "<group>"; };
 		0DD3D72E1F8C0DAA0076DDB5 /* TransportationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationTableViewController.swift; sourceTree = "<group>"; };
 		0DD3D7301F8C48240076DDB5 /* AirportDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailsViewController.swift; sourceTree = "<group>"; };
 		0DD3D7331F8E88AA0076DDB5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0DD5A5231F9ECC4500D4ECD0 /* AttractionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionDetailViewController.swift; sourceTree = "<group>"; };
 		826B44A71588F9247D08FD70 /* Pods-SANA-DC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANA-DC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC.release.xcconfig"; sourceTree = "<group>"; };
 		D3FBAFA71070AD94F2FA233C /* Pods-SANA-DC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANA-DC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC.debug.xcconfig"; sourceTree = "<group>"; };
 		DDB4F877929BAD892694821F /* Pods_SANA_DC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SANA_DC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,11 +131,12 @@
 				0DD3D7241F8831E90076DDB5 /* ScheduleDetailViewController.swift */,
 				0DD3D7261F8A76A80076DDB5 /* HotelViewController.swift */,
 				0DD3D7281F8A76D90076DDB5 /* SANARegistrationViewController.swift */,
-				0DD3D72C1F8A77FD0076DDB5 /* AttractionsViewController.swift */,
 				0DD3D72E1F8C0DAA0076DDB5 /* TransportationTableViewController.swift */,
 				0DD3D7301F8C48240076DDB5 /* AirportDetailsViewController.swift */,
 				0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */,
 				0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */,
+				0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */,
+				0DD5A5231F9ECC4500D4ECD0 /* AttractionDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -290,9 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD3D72D1F8A77FD0076DDB5 /* AttractionsViewController.swift in Sources */,
 				0DD3D7341F8E88AA0076DDB5 /* Constants.swift in Sources */,
 				0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */,
+				0D46CA7B1F9ED3760091EA8C /* AttractionsTableViewController.swift in Sources */,
 				0DD3D7271F8A76A80076DDB5 /* HotelViewController.swift in Sources */,
 				0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */,
 				0DD3D7311F8C48240076DDB5 /* AirportDetailsViewController.swift in Sources */,
@@ -300,6 +303,7 @@
 				0DB3A7961F842E4A00B4A519 /* DataManager.swift in Sources */,
 				0D7859CE1F8E99B4007EC1A6 /* AgendaTableViewCell.swift in Sources */,
 				0D9E230F1F92902000D2F6C6 /* CarRentalsViewController.swift in Sources */,
+				0DD5A5241F9ECC4500D4ECD0 /* AttractionDetailViewController.swift in Sources */,
 				0DB3A7721F7D5DE400B4A519 /* AppDelegate.swift in Sources */,
 				0DD3D7291F8A76D90076DDB5 /* SANARegistrationViewController.swift in Sources */,
 				0D9E230B1F91A9C200D2F6C6 /* TabBarViewController.swift in Sources */,
