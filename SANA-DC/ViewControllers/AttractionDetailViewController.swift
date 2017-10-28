@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class AttractionDetailViewController: UIViewController {
+class AttractionDetailViewController: UIViewController,WKNavigationDelegate {
 
     var row = 0
     
@@ -23,7 +23,7 @@ class AttractionDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         //self.navigationItem.title = ""
-        
+        webView.navigationDelegate = self
         self.webView.load(URLRequest(url: URL(string: urls[row])!))
 
     }

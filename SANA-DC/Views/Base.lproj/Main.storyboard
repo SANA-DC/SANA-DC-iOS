@@ -1156,53 +1156,62 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel direction: 25 miles NE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssk-G5-rL9">
-                                <rect key="frame" x="16" y="199.5" width="343" height="22.5"/>
-                                <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This hotel does not provide shuttle service." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-wS-X0m">
-                                <rect key="frame" x="16" y="238" width="343" height="22.5"/>
+                                <rect key="frame" x="16" y="292" width="343" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated taxi fare: 60 USD  (one way)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdA-ek-A4w">
-                                <rect key="frame" x="16" y="276.5" width="343" height="22.5"/>
+                                <rect key="frame" x="16" y="330.5" width="343" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Airport Phone: +1 703-572 -2700" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SWD-Mb-vBf">
-                                <rect key="frame" x="16" y="153.5" width="343" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mnc-cB-C01">
+                                <rect key="frame" x="16" y="157.5" width="344" height="76"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="mi3-z5-3sS"/>
+                                    <constraint firstAttribute="height" constant="76" id="WXz-RE-XQM"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1319 Rockville Pike
+Rockville, Maryland 20852
+Phone: +1-240-314-0640</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
                             </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yy8-3V-No8">
+                                <rect key="frame" x="0.0" y="361" width="375" height="257"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel direction: 25 miles NE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssk-G5-rL9">
+                                <rect key="frame" x="16" y="253.5" width="205.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ssk-G5-rL9" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" constant="16" id="0Mb-FE-ccV"/>
+                            <constraint firstItem="2V4-l7-hob" firstAttribute="trailing" secondItem="Mnc-cB-C01" secondAttribute="trailing" constant="15" id="0Mh-gF-e86"/>
                             <constraint firstItem="2V4-l7-hob" firstAttribute="trailing" secondItem="KdA-ek-A4w" secondAttribute="trailing" constant="16" id="0ay-HL-ge6"/>
                             <constraint firstItem="2GV-FE-wmN" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" constant="16" id="1Pf-1X-WjO"/>
-                            <constraint firstItem="Ssk-G5-rL9" firstAttribute="top" secondItem="SWD-Mb-vBf" secondAttribute="bottom" constant="12" id="5Pr-se-8EU"/>
                             <constraint firstItem="Iwp-wS-X0m" firstAttribute="top" secondItem="Ssk-G5-rL9" secondAttribute="bottom" constant="16" id="7JN-Xh-DOF"/>
-                            <constraint firstItem="SWD-Mb-vBf" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" constant="16" id="7YS-dM-5XE"/>
-                            <constraint firstItem="2V4-l7-hob" firstAttribute="trailing" secondItem="SWD-Mb-vBf" secondAttribute="trailing" constant="16" id="7or-j3-eWN"/>
                             <constraint firstItem="KdA-ek-A4w" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" constant="16" id="8Tp-Ym-hpS"/>
                             <constraint firstItem="KdA-ek-A4w" firstAttribute="top" secondItem="Iwp-wS-X0m" secondAttribute="bottom" constant="16" id="ErA-pS-gVd"/>
+                            <constraint firstItem="Ssk-G5-rL9" firstAttribute="top" secondItem="Mnc-cB-C01" secondAttribute="bottom" constant="20" id="KiA-Y6-kGE"/>
                             <constraint firstItem="2V4-l7-hob" firstAttribute="trailing" secondItem="2GV-FE-wmN" secondAttribute="trailing" constant="16" id="RMP-Tv-Nm0"/>
-                            <constraint firstItem="SWD-Mb-vBf" firstAttribute="top" secondItem="2GV-FE-wmN" secondAttribute="bottom" constant="16" id="W9d-pE-7qv"/>
-                            <constraint firstItem="2V4-l7-hob" firstAttribute="trailing" secondItem="Ssk-G5-rL9" secondAttribute="trailing" constant="16" id="ckI-AG-aqr"/>
+                            <constraint firstItem="yy8-3V-No8" firstAttribute="trailing" secondItem="2V4-l7-hob" secondAttribute="trailing" id="SdB-QI-Iof"/>
                             <constraint firstItem="2GV-FE-wmN" firstAttribute="top" secondItem="2V4-l7-hob" secondAttribute="top" constant="16" id="g5T-Lq-DbF"/>
+                            <constraint firstItem="yy8-3V-No8" firstAttribute="top" secondItem="KdA-ek-A4w" secondAttribute="bottom" constant="8" id="gyK-T8-Lmg"/>
+                            <constraint firstItem="Mnc-cB-C01" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" constant="16" id="icU-fQ-uCp"/>
                             <constraint firstItem="Iwp-wS-X0m" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" constant="16" id="kW0-T8-6iw"/>
-                            <constraint firstItem="Ssk-G5-rL9" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" constant="16" id="pim-Qc-CgP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ssk-G5-rL9" secondAttribute="trailing" constant="20" symbolic="YES" id="mQf-Uq-6ZZ"/>
+                            <constraint firstItem="yy8-3V-No8" firstAttribute="bottom" secondItem="2V4-l7-hob" secondAttribute="bottom" id="mjZ-7Q-kQc"/>
+                            <constraint firstItem="yy8-3V-No8" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" id="oMx-Yy-GsO"/>
+                            <constraint firstItem="Mnc-cB-C01" firstAttribute="top" secondItem="2GV-FE-wmN" secondAttribute="bottom" constant="20" id="v16-3M-Xtd"/>
                             <constraint firstItem="2V4-l7-hob" firstAttribute="trailing" secondItem="Iwp-wS-X0m" secondAttribute="trailing" constant="16" id="zs5-2g-uhX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2V4-l7-hob"/>
@@ -1210,13 +1219,14 @@
                     <connections>
                         <outlet property="estimatedTaxiFare" destination="KdA-ek-A4w" id="LAJ-xX-rMC"/>
                         <outlet property="hotelDirection" destination="Ssk-G5-rL9" id="wdH-Je-IhX"/>
+                        <outlet property="mapView" destination="yy8-3V-No8" id="Rel-cD-DeE"/>
                         <outlet property="name" destination="2GV-FE-wmN" id="1ky-ZY-6ma"/>
-                        <outlet property="phone" destination="SWD-Mb-vBf" id="eWs-C6-23s"/>
+                        <outlet property="phoneAddress" destination="Mnc-cB-C01" id="qag-BP-P5d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qP-Td-UhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3998" y="1296"/>
+            <point key="canvasLocation" x="3997.5999999999999" y="1295.8020989505249"/>
         </scene>
         <!--Other Transportation Details View Controller-->
         <scene sceneID="GND-Uh-Jdf">
