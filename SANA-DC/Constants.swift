@@ -17,7 +17,7 @@ struct Constants {
     struct URLConstants {
         static let sanaURL =  "https://sanaonline.org/product/convention-registration-adult-member/"
         
-        static let hotelURL =  "https://www.marriott.com/hotels/travel/wasbn-bethesda-north-marriott-hotel-and-conference-center"
+        static let hotelURL =  "https://aws.passkey.com/e/49513241"
         
         static let firebaseURL = "https://firebasestorage.googleapis.com/v0/b/sana-dc.appspot.com/o/SANA_DC.json?alt=media&token=c445d7bc-70f4-43d2-8818-cfa40cad06b2"
         

@@ -13,12 +13,15 @@ class HotelViewController: UIViewController, WKNavigationDelegate{
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var parentViewOfDetails: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         webView.navigationDelegate = self
         self.webView.load(URLRequest(url: URL(string: Constants.URLConstants.hotelURL)!))
+        
+        parentViewOfDetails.backgroundColor = UIColor.white.withAlphaComponent(0.5)
     }
 
     
@@ -34,7 +37,10 @@ class HotelViewController: UIViewController, WKNavigationDelegate{
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func moreDetails(_ sender: UIBarButtonItem) {
+        parentViewOfDetails.isHidden = false
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D46CA7B1F9ED3760091EA8C /* AttractionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */; };
 		0D7859CE1F8E99B4007EC1A6 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */; };
+		0D9688221FC1E0EF0054FA30 /* ContactSANAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */; };
 		0D9E230B1F91A9C200D2F6C6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */; };
 		0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */; };
 		0D9E230F1F92902000D2F6C6 /* CarRentalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsTableViewController.swift; sourceTree = "<group>"; };
 		0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSANAViewController.swift; sourceTree = "<group>"; };
 		0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTransportationDetailsViewController.swift; sourceTree = "<group>"; };
 		0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRentalsViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */,
 				0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */,
 				0DD5A5231F9ECC4500D4ECD0 /* AttractionDetailViewController.swift */,
+				0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */,
 				0D46CA7B1F9ED3760091EA8C /* AttractionsTableViewController.swift in Sources */,
 				0DD3D7271F8A76A80076DDB5 /* HotelViewController.swift in Sources */,
+				0D9688221FC1E0EF0054FA30 /* ContactSANAViewController.swift in Sources */,
 				0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */,
 				0DD3D7311F8C48240076DDB5 /* AirportDetailsViewController.swift in Sources */,
 				0DD3D72F1F8C0DAA0076DDB5 /* TransportationTableViewController.swift in Sources */,
