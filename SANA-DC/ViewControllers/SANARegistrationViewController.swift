@@ -13,6 +13,7 @@ class SANARegistrationViewController: UIViewController,WKNavigationDelegate {
 
     @IBOutlet weak var activityInd: UIActivityIndicatorView!
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var parentViewOfDetails: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class SANARegistrationViewController: UIViewController,WKNavigationDelegate {
         // Do any additional setup after loading the view.
         webView.navigationDelegate = self
         self.webView.load(URLRequest(url: URL(string: Constants.URLConstants.sanaURL)!))
+        parentViewOfDetails.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
     }
     
     
@@ -42,4 +44,12 @@ class SANARegistrationViewController: UIViewController,WKNavigationDelegate {
     }
     */
 
+    @IBAction func moreDetails(_ sender: UIBarButtonItem) {
+        parentViewOfDetails.isHidden = !parentViewOfDetails.isHidden
+    }
+    
+    @IBAction func hideParentView(_ sender: UITapGestureRecognizer) {
+        
+        parentViewOfDetails.isHidden = true
+    }
 }

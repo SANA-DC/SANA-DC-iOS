@@ -473,7 +473,7 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eA-kd-tiV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4H-kg-uNJ">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u4H-kg-uNJ">
                                         <rect key="frame" x="50" y="50" width="275" height="454"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <mutableString key="text">
@@ -496,9 +496,12 @@ Please use the following information to book the room:
 
 Please feel free to book your rooms now so that we have an idea of the number of participants.
 
+If any member has a question regarding hotel booking or registration process, please contact LOC chair, Hafeez Abbasi, MD at +1-301-768-0552
+
 </mutableString>
                                         <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -508,12 +511,16 @@ Please feel free to book your rooms now so that we have an idea of the number of
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="u4H-kg-uNJ" firstAttribute="leading" secondItem="0eA-kd-tiV" secondAttribute="leading" constant="50" id="3PD-e2-XKg"/>
                                     <constraint firstItem="u4H-kg-uNJ" firstAttribute="top" secondItem="0eA-kd-tiV" secondAttribute="top" constant="50" id="Vs9-ua-eSo"/>
                                     <constraint firstAttribute="trailing" secondItem="u4H-kg-uNJ" secondAttribute="trailing" constant="50" id="d3P-YI-LvC"/>
                                     <constraint firstAttribute="bottom" secondItem="u4H-kg-uNJ" secondAttribute="bottom" constant="50" id="vhI-BC-LZZ"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nYC-Cd-BtF" appends="YES" id="8tC-22-yFt"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -532,7 +539,7 @@ Please feel free to book your rooms now so that we have an idea of the number of
                         <viewLayoutGuide key="safeArea" id="mos-aD-cY1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hotel" id="4UC-r6-Mff">
-                        <barButtonItem key="rightBarButtonItem" title="More Details " id="RDA-1d-MMS">
+                        <barButtonItem key="rightBarButtonItem" title="More Details " image="information" id="RDA-1d-MMS">
                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="moreDetails:" destination="mE4-YY-bu8" id="wG7-Cm-7dB"/>
@@ -546,6 +553,11 @@ Please feel free to book your rooms now so that we have an idea of the number of
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ud2-61-9LF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nYC-Cd-BtF">
+                    <connections>
+                        <action selector="hideParentView:" destination="mE4-YY-bu8" id="2cZ-kQ-cM4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1524" y="491.60419790104953"/>
         </scene>
@@ -565,6 +577,81 @@ Please feel free to book your rooms now so that we have an idea of the number of
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="577-sX-Hut">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Aks-yO-ck7">
+                                        <rect key="frame" x="50" y="50" width="275" height="503"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <mutableString key="text">
+
+
+Convention Registration:
+
+Convention registration will open in the month of January. Considering the expenses, EC has come up with the following registration fee structure:
+
+Early registration from Jan to March:
+
+Adults Members (Age 12 and above) - $130
+
+Adults Non-Members (Age 12 and above) - $150
+
+Children Members (Age 5 -12) - $80
+
+Children Non-Members (Age 5 -12) - $100
+
+ 
+
+2nd period Apr to Jun:
+
+Adults Members (Age 12 and above) - $140
+
+Adults Non-Members (Age 12 and above) - $160
+
+Children Members (Age 5 -12)  - $90
+
+Children Non-Members (Age 5 -12) - $110
+
+ 
+From 1 July
+ 
+
+Adults Members (Age 12 and above) - $160
+
+Adults Non-Members (Age 12 and above) - $180
+
+Children Members (Age 5 -12) - $100
+
+Children Non-Members (Age 5 -12) - $120
+
+Since the convention will start in the SANA fiscal year 2018-19, membership fee paid along with the convention registration fee will be considered good for that year 2018-19, even though paid earlier.
+
+If any member has a question regarding hotel booking or registration process, please contact LOC chair, Hafeez Abbasi, MD at +1-301-768-0552
+
+</mutableString>
+                                        <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="Aks-yO-ck7" firstAttribute="leading" secondItem="577-sX-Hut" secondAttribute="leading" constant="50" id="KNR-Fq-JqF"/>
+                                    <constraint firstItem="Aks-yO-ck7" firstAttribute="top" secondItem="577-sX-Hut" secondAttribute="top" constant="50" id="WcH-8y-5JZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Aks-yO-ck7" secondAttribute="bottom" constant="50" id="ozM-TP-7Z5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aks-yO-ck7" secondAttribute="trailing" constant="50" id="pzM-xq-6uu"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Zjt-Bm-6nI" appends="YES" id="jzR-mH-DJN"/>
+                                </connections>
+                            </view>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="neW-qk-P6u">
                                 <rect key="frame" x="169" y="258.5" width="37" height="37"/>
                                 <constraints>
@@ -576,22 +663,38 @@ Please feel free to book your rooms now so that we have an idea of the number of
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="577-sX-Hut" firstAttribute="top" secondItem="aQN-fK-pu2" secondAttribute="top" id="4eF-3C-IL9"/>
                             <constraint firstItem="neW-qk-P6u" firstAttribute="centerY" secondItem="aQN-fK-pu2" secondAttribute="centerY" id="8cQ-Bd-Y4z"/>
                             <constraint firstItem="uEr-QR-TFc" firstAttribute="leading" secondItem="aQN-fK-pu2" secondAttribute="leading" id="T1f-5R-QoO"/>
+                            <constraint firstItem="577-sX-Hut" firstAttribute="leading" secondItem="aQN-fK-pu2" secondAttribute="leading" id="YHD-Xk-X5D"/>
+                            <constraint firstItem="577-sX-Hut" firstAttribute="trailing" secondItem="aQN-fK-pu2" secondAttribute="trailing" id="eYX-ms-YJL"/>
                             <constraint firstItem="uEr-QR-TFc" firstAttribute="top" secondItem="aQN-fK-pu2" secondAttribute="top" id="gmX-fR-hSd"/>
+                            <constraint firstAttribute="bottom" secondItem="577-sX-Hut" secondAttribute="bottom" id="n6X-xf-fxF"/>
                             <constraint firstItem="aQN-fK-pu2" firstAttribute="trailing" secondItem="uEr-QR-TFc" secondAttribute="trailing" id="o4g-qp-OR8"/>
                             <constraint firstItem="aQN-fK-pu2" firstAttribute="bottom" secondItem="uEr-QR-TFc" secondAttribute="bottom" id="oCe-Ub-L5y"/>
                             <constraint firstItem="neW-qk-P6u" firstAttribute="centerX" secondItem="aQN-fK-pu2" secondAttribute="centerX" id="uIk-kK-CQP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aQN-fK-pu2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SANA Registration" id="imM-fN-WZ7"/>
+                    <navigationItem key="navigationItem" title="SANA Registration" id="imM-fN-WZ7">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="information" id="bhe-Z3-0MN">
+                            <connections>
+                                <action selector="moreDetails:" destination="MAx-j7-GNa" id="uw2-ux-0Xh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityInd" destination="neW-qk-P6u" id="qIP-Vz-KKZ"/>
+                        <outlet property="parentViewOfDetails" destination="577-sX-Hut" id="oMD-G3-U6n"/>
                         <outlet property="webView" destination="uEr-QR-TFc" id="Zrf-Fx-y8w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQo-CE-rVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Zjt-Bm-6nI">
+                    <connections>
+                        <action selector="hideParentView:" destination="MAx-j7-GNa" id="Rg4-9I-P13"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1524" y="1296"/>
         </scene>
@@ -1214,20 +1317,20 @@ Please feel free to book your rooms now so that we have an idea of the number of
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="This hotel does not provide shuttle service." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-wS-X0m">
-                                <rect key="frame" x="16" y="296" width="343" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This hotel does not provide shuttle service." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-wS-X0m">
+                                <rect key="frame" x="16" y="297" width="343" height="23"/>
                                 <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Estimated taxi fare: 60 USD  (one way)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdA-ek-A4w">
-                                <rect key="frame" x="16" y="335" width="343" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated taxi fare: 60 USD  (one way)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdA-ek-A4w">
+                                <rect key="frame" x="16" y="336" width="343" height="23"/>
                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mnc-cB-C01">
-                                <rect key="frame" x="16" y="162" width="344" height="76"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mnc-cB-C01">
+                                <rect key="frame" x="16" y="157.5" width="344" height="76"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="WXz-RE-XQM"/>
@@ -1240,10 +1343,10 @@ Phone: +1-240-314-0640</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
                             </textView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yy8-3V-No8">
-                                <rect key="frame" x="0.0" y="365" width="375" height="253"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yy8-3V-No8">
+                                <rect key="frame" x="0.0" y="367" width="375" height="251"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hotel direction: 25 miles NE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssk-G5-rL9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel direction: 25 miles NE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssk-G5-rL9">
                                 <rect key="frame" x="16" y="258" width="206" height="23"/>
                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1259,7 +1362,6 @@ Phone: +1-240-314-0640</string>
                             <constraint firstItem="Iwp-wS-X0m" firstAttribute="top" secondItem="Ssk-G5-rL9" secondAttribute="bottom" constant="16" id="7JN-Xh-DOF"/>
                             <constraint firstItem="KdA-ek-A4w" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" constant="16" id="8Tp-Ym-hpS"/>
                             <constraint firstItem="KdA-ek-A4w" firstAttribute="top" secondItem="Iwp-wS-X0m" secondAttribute="bottom" constant="16" id="ErA-pS-gVd"/>
-                            <constraint firstItem="Ssk-G5-rL9" firstAttribute="top" secondItem="Mnc-cB-C01" secondAttribute="bottom" constant="20" id="KiA-Y6-kGE"/>
                             <constraint firstItem="2V4-l7-hob" firstAttribute="trailing" secondItem="2GV-FE-wmN" secondAttribute="trailing" constant="16" id="RMP-Tv-Nm0"/>
                             <constraint firstItem="yy8-3V-No8" firstAttribute="trailing" secondItem="2V4-l7-hob" secondAttribute="trailing" id="SdB-QI-Iof"/>
                             <constraint firstItem="2GV-FE-wmN" firstAttribute="top" secondItem="2V4-l7-hob" secondAttribute="top" constant="16" id="g5T-Lq-DbF"/>
@@ -1269,6 +1371,7 @@ Phone: +1-240-314-0640</string>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ssk-G5-rL9" secondAttribute="trailing" constant="20" symbolic="YES" id="mQf-Uq-6ZZ"/>
                             <constraint firstItem="yy8-3V-No8" firstAttribute="bottom" secondItem="2V4-l7-hob" secondAttribute="bottom" id="mjZ-7Q-kQc"/>
                             <constraint firstItem="yy8-3V-No8" firstAttribute="leading" secondItem="2V4-l7-hob" secondAttribute="leading" id="oMx-Yy-GsO"/>
+                            <constraint firstItem="Ssk-G5-rL9" firstAttribute="top" secondItem="Mnc-cB-C01" secondAttribute="bottom" constant="24.5" id="sX0-Tc-3gG"/>
                             <constraint firstItem="Mnc-cB-C01" firstAttribute="top" secondItem="2GV-FE-wmN" secondAttribute="bottom" constant="20" id="v16-3M-Xtd"/>
                             <constraint firstItem="2V4-l7-hob" firstAttribute="trailing" secondItem="Iwp-wS-X0m" secondAttribute="trailing" constant="16" id="zs5-2g-uhX"/>
                         </constraints>
@@ -1489,6 +1592,7 @@ Phone: +1-240-314-0640</string>
         <image name="email" width="512" height="512"/>
         <image name="facebook" width="512" height="512"/>
         <image name="info" width="25" height="25"/>
+        <image name="information" width="25" height="25"/>
         <image name="second" width="30" height="30"/>
         <image name="skyscraper" width="25" height="25"/>
         <image name="twitter" width="512" height="512"/>

@@ -21,7 +21,7 @@ class HotelViewController: UIViewController, WKNavigationDelegate{
         webView.navigationDelegate = self
         self.webView.load(URLRequest(url: URL(string: Constants.URLConstants.hotelURL)!))
         
-        parentViewOfDetails.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        parentViewOfDetails.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
     }
 
     
@@ -38,7 +38,12 @@ class HotelViewController: UIViewController, WKNavigationDelegate{
     }
     
     @IBAction func moreDetails(_ sender: UIBarButtonItem) {
-        parentViewOfDetails.isHidden = false
+        parentViewOfDetails.isHidden = !parentViewOfDetails.isHidden
+    }
+    
+    @IBAction func hideParentView(_ sender: UITapGestureRecognizer) {
+        
+        parentViewOfDetails.isHidden = true
     }
     
     /*
