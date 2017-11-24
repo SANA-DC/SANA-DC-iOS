@@ -33,14 +33,16 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
             NSAttributedStringKey.foregroundColor : UIColor.white,
             NSAttributedStringKey.font: UIFont(name: Constants.FontsContants.optimistBold, size: 18)!
         ]
-        let view = self.moreNavigationController.topViewController?.view as! UITableView
         
-        for cell in view.visibleCells{
-            let tableCell = cell as UITableViewCell
-            tableCell.backgroundColor = .black
-            tableCell.textLabel?.textColor = .white
+    
+        
+        if let view = self.moreNavigationController.topViewController?.view as? UITableView{
+            for cell in view.visibleCells{
+                let tableCell = cell as UITableViewCell
+                tableCell.backgroundColor = .black
+                tableCell.textLabel?.textColor = .white
+            }
         }
-        
     }
     
     override func didReceiveMemoryWarning() {

@@ -476,7 +476,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u4H-kg-uNJ">
                                         <rect key="frame" x="50" y="50" width="275" height="454"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">
+                                        <string key="text">
 
 Room Rate: $119/Night, includes:
 
@@ -498,7 +498,7 @@ Please feel free to book your rooms now so that we have an idea of the number of
 
 If any member has a question regarding hotel booking or registration process, please contact LOC chair, Hafeez Abbasi, MD at +1-301-768-0552
 
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
@@ -578,12 +578,12 @@ If any member has a question regarding hotel booking or registration process, pl
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="577-sX-Hut">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Aks-yO-ck7">
-                                        <rect key="frame" x="50" y="50" width="275" height="503"/>
+                                        <rect key="frame" x="50" y="50" width="275" height="454"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">
+                                        <string key="text">
 
 
 Convention Registration:
@@ -628,7 +628,7 @@ Since the convention will start in the SANA fiscal year 2018-19, membership fee 
 
 If any member has a question regarding hotel booking or registration process, please contact LOC chair, Hafeez Abbasi, MD at +1-301-768-0552
 
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
@@ -669,10 +669,10 @@ If any member has a question regarding hotel booking or registration process, pl
                             <constraint firstItem="577-sX-Hut" firstAttribute="leading" secondItem="aQN-fK-pu2" secondAttribute="leading" id="YHD-Xk-X5D"/>
                             <constraint firstItem="577-sX-Hut" firstAttribute="trailing" secondItem="aQN-fK-pu2" secondAttribute="trailing" id="eYX-ms-YJL"/>
                             <constraint firstItem="uEr-QR-TFc" firstAttribute="top" secondItem="aQN-fK-pu2" secondAttribute="top" id="gmX-fR-hSd"/>
-                            <constraint firstAttribute="bottom" secondItem="577-sX-Hut" secondAttribute="bottom" id="n6X-xf-fxF"/>
                             <constraint firstItem="aQN-fK-pu2" firstAttribute="trailing" secondItem="uEr-QR-TFc" secondAttribute="trailing" id="o4g-qp-OR8"/>
                             <constraint firstItem="aQN-fK-pu2" firstAttribute="bottom" secondItem="uEr-QR-TFc" secondAttribute="bottom" id="oCe-Ub-L5y"/>
                             <constraint firstItem="neW-qk-P6u" firstAttribute="centerX" secondItem="aQN-fK-pu2" secondAttribute="centerX" id="uIk-kK-CQP"/>
+                            <constraint firstItem="577-sX-Hut" firstAttribute="bottom" secondItem="aQN-fK-pu2" secondAttribute="bottom" id="ye2-S9-c4h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aQN-fK-pu2"/>
                     </view>
@@ -1155,8 +1155,8 @@ If any member has a question regarding hotel booking or registration process, pl
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On-site parking, fee: 15 USD daily" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh4-pq-5DC">
-                                                    <rect key="frame" x="16" y="24" width="343" height="22.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free for first  150 vehicles, first come first served" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh4-pq-5DC">
+                                                    <rect key="frame" x="16" y="12.5" width="343" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1170,34 +1170,12 @@ If any member has a question regarding hotel booking or registration process, pl
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Parking2" rowHeight="70" id="nxA-ja-kiq">
-                                        <rect key="frame" x="0.0" y="391.5" width="375" height="70"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nxA-ja-kiq" id="lj9-Ks-I8z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off-site parking, fee: 15 USD daily" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJf-33-ybc">
-                                                    <rect key="frame" x="16" y="24" width="343" height="22.5"/>
-                                                    <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="kJf-33-ybc" firstAttribute="leading" secondItem="lj9-Ks-I8z" secondAttribute="leadingMargin" id="74T-Ud-Bk1"/>
-                                                <constraint firstItem="kJf-33-ybc" firstAttribute="centerX" secondItem="lj9-Ks-I8z" secondAttribute="centerX" id="ORM-VS-7El"/>
-                                                <constraint firstItem="kJf-33-ybc" firstAttribute="centerY" secondItem="lj9-Ks-I8z" secondAttribute="centerY" id="Tcv-hy-vcn"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="OTHER TRANSPORTATION" id="Ulv-eA-ZK8">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Bus" rowHeight="70" id="mWE-ZS-xFP">
-                                        <rect key="frame" x="0.0" y="517.5" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="447.5" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mWE-ZS-xFP" id="5p6-5d-54e">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="69.5"/>
@@ -1219,7 +1197,7 @@ If any member has a question regarding hotel booking or registration process, pl
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Subway" rowHeight="70" id="UDE-gU-5Rz">
-                                        <rect key="frame" x="0.0" y="587.5" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="517.5" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UDE-gU-5Rz" id="U4u-jI-SSs">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="69.5"/>
@@ -1241,10 +1219,10 @@ If any member has a question regarding hotel booking or registration process, pl
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Train" rowHeight="70" id="cIH-UG-LhE">
-                                        <rect key="frame" x="0.0" y="657.5" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="587.5" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cIH-UG-LhE" id="PHF-Dt-kkv">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Station" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDF-xv-A1X">
@@ -1263,14 +1241,14 @@ If any member has a question regarding hotel booking or registration process, pl
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Car" rowHeight="70" id="7xo-Vk-oWH">
-                                        <rect key="frame" x="0.0" y="727.5" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="657.5" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xo-Vk-oWH" id="R2B-ta-CGa">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Rentals" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cC9-BP-vaU">
-                                                    <rect key="frame" x="8" y="24" width="326" height="22.5"/>
+                                                    <rect key="frame" x="16" y="24" width="310" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1301,7 +1279,7 @@ If any member has a question regarding hotel booking or registration process, pl
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Coi-by-zut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1485.5999999999999" y="2052.3238380809598"/>
+            <point key="canvasLocation" x="1486" y="2042"/>
         </scene>
         <!--Airport Details View Controller-->
         <scene sceneID="q6i-br-lwK">
@@ -1317,20 +1295,20 @@ If any member has a question regarding hotel booking or registration process, pl
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This hotel does not provide shuttle service." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-wS-X0m">
-                                <rect key="frame" x="16" y="297" width="343" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="This hotel does not provide shuttle service." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-wS-X0m">
+                                <rect key="frame" x="16" y="301" width="343" height="23"/>
                                 <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated taxi fare: 60 USD  (one way)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdA-ek-A4w">
-                                <rect key="frame" x="16" y="336" width="343" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Estimated taxi fare: 60 USD  (one way)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdA-ek-A4w">
+                                <rect key="frame" x="16" y="340" width="343" height="23"/>
                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mnc-cB-C01">
-                                <rect key="frame" x="16" y="157.5" width="344" height="76"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mnc-cB-C01">
+                                <rect key="frame" x="16" y="162" width="344" height="76"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="WXz-RE-XQM"/>
@@ -1343,11 +1321,11 @@ Phone: +1-240-314-0640</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
                             </textView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yy8-3V-No8">
-                                <rect key="frame" x="0.0" y="367" width="375" height="251"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yy8-3V-No8">
+                                <rect key="frame" x="0.0" y="371" width="375" height="247"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel direction: 25 miles NE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssk-G5-rL9">
-                                <rect key="frame" x="16" y="258" width="206" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hotel direction: 25 miles NE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssk-G5-rL9">
+                                <rect key="frame" x="16" y="262" width="206" height="23"/>
                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1546,34 +1524,59 @@ Phone: +1-240-314-0640</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="s76-Cr-Xpp">
-                                <rect key="frame" x="16" y="106" width="343" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vuz-ew-O3u">
+                                <rect key="frame" x="20" y="106" width="335" height="170"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="yiz-80-BCf">
-                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="50"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtube" translatesAutoresizingMaskIntoConstraints="NO" id="gz4-Sj-Cdp">
-                                        <rect key="frame" x="88.5" y="0.0" width="78" height="50"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="ZrU-Cb-KPN">
-                                        <rect key="frame" x="176.5" y="0.0" width="78.5" height="50"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="Ze7-7b-oto">
-                                        <rect key="frame" x="265" y="0.0" width="78" height="50"/>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IB3-nh-TJN">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                                        <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
+                                        <state key="normal" title="Email">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="email:" destination="kcB-DK-qe7" eventType="touchUpInside" id="Jwr-hF-XOD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mw3-Fb-8jk">
+                                        <rect key="frame" x="0.0" y="45" width="335" height="35"/>
+                                        <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
+                                        <state key="normal" title="Facebook">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openFB" destination="kcB-DK-qe7" eventType="touchUpInside" id="L5p-G8-ulu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPX-km-8Hp">
+                                        <rect key="frame" x="0.0" y="90" width="335" height="35"/>
+                                        <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
+                                        <state key="normal" title="Twitter">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openTwitter" destination="kcB-DK-qe7" eventType="touchUpInside" id="rC1-xl-1jh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBl-h5-apA">
+                                        <rect key="frame" x="0.0" y="135" width="335" height="35"/>
+                                        <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
+                                        <state key="normal" title="Instagram">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openInstagram" destination="kcB-DK-qe7" eventType="touchUpInside" id="xtE-jN-sW1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="e6x-0X-scb"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="x1V-vy-out" firstAttribute="leading" secondItem="DRC-BA-Az9" secondAttribute="leading" constant="16" id="0Or-ad-7If"/>
-                            <constraint firstItem="DRC-BA-Az9" firstAttribute="trailing" secondItem="s76-Cr-Xpp" secondAttribute="trailing" constant="16" id="2pg-Rl-o1c"/>
-                            <constraint firstItem="s76-Cr-Xpp" firstAttribute="leading" secondItem="DRC-BA-Az9" secondAttribute="leading" constant="16" id="I1R-ey-L68"/>
                             <constraint firstItem="DRC-BA-Az9" firstAttribute="trailing" secondItem="x1V-vy-out" secondAttribute="trailing" constant="16" id="KUu-Dg-0dc"/>
-                            <constraint firstItem="s76-Cr-Xpp" firstAttribute="top" secondItem="x1V-vy-out" secondAttribute="bottom" constant="50" id="bGP-ri-Ewi"/>
+                            <constraint firstItem="vuz-ew-O3u" firstAttribute="top" secondItem="x1V-vy-out" secondAttribute="bottom" constant="50" id="MOc-56-mj1"/>
+                            <constraint firstItem="vuz-ew-O3u" firstAttribute="leading" secondItem="DRC-BA-Az9" secondAttribute="leading" constant="20" id="RX7-8i-rPg"/>
+                            <constraint firstItem="DRC-BA-Az9" firstAttribute="trailing" secondItem="vuz-ew-O3u" secondAttribute="trailing" constant="20" id="sPX-IA-WLM"/>
                             <constraint firstItem="x1V-vy-out" firstAttribute="top" secondItem="DRC-BA-Az9" secondAttribute="top" constant="20" id="zdh-Q8-T9u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DRC-BA-Az9"/>
@@ -1589,13 +1592,9 @@ Phone: +1-240-314-0640</string>
         <image name="Schedule" width="25" height="25"/>
         <image name="Transportation" width="25" height="25"/>
         <image name="attractions" width="25" height="25"/>
-        <image name="email" width="512" height="512"/>
-        <image name="facebook" width="512" height="512"/>
         <image name="info" width="25" height="25"/>
         <image name="information" width="25" height="25"/>
         <image name="second" width="30" height="30"/>
         <image name="skyscraper" width="25" height="25"/>
-        <image name="twitter" width="512" height="512"/>
-        <image name="youtube" width="500" height="500"/>
     </resources>
 </document>

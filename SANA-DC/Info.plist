@@ -64,5 +64,11 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>instagram</string>
+		<string>fb</string>
+		<string>twitter</string>
+	</array>
 </dict>
 </plist>
