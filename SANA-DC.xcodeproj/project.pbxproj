@@ -23,6 +23,7 @@
 		0DB3A7901F7DA31400B4A519 /* Optimist_Rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A78C1F7DA10C00B4A519 /* Optimist_Rg.ttf */; };
 		0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7921F7F028200B4A519 /* AgendaTableViewController.swift */; };
 		0DB3A7961F842E4A00B4A519 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7951F842E4A00B4A519 /* DataManager.swift */; };
+		0DBFC1341FC9DC5A0047595C /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFC1331FC9DC5A0047595C /* AboutMeViewController.swift */; };
 		0DD3D7251F8831E90076DDB5 /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7241F8831E90076DDB5 /* ScheduleDetailViewController.swift */; };
 		0DD3D7271F8A76A80076DDB5 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7261F8A76A80076DDB5 /* HotelViewController.swift */; };
 		0DD3D7291F8A76D90076DDB5 /* SANARegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3D7281F8A76D90076DDB5 /* SANARegistrationViewController.swift */; };
@@ -54,6 +55,7 @@
 		0DB3A7921F7F028200B4A519 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
 		0DB3A7941F832EAF00B4A519 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DB3A7951F842E4A00B4A519 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0DBFC1331FC9DC5A0047595C /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		0DD3D7241F8831E90076DDB5 /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
 		0DD3D7261F8A76A80076DDB5 /* HotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		0DD3D7281F8A76D90076DDB5 /* SANARegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANARegistrationViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */,
 				0DD5A5231F9ECC4500D4ECD0 /* AttractionDetailViewController.swift */,
 				0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */,
+				0DBFC1331FC9DC5A0047595C /* AboutMeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				0DD3D7291F8A76D90076DDB5 /* SANARegistrationViewController.swift in Sources */,
 				0D9E230B1F91A9C200D2F6C6 /* TabBarViewController.swift in Sources */,
 				0DB3A7881F7D642B00B4A519 /* WelcomeViewController.swift in Sources */,
+				0DBFC1341FC9DC5A0047595C /* AboutMeViewController.swift in Sources */,
 				0DD3D7251F8831E90076DDB5 /* ScheduleDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
