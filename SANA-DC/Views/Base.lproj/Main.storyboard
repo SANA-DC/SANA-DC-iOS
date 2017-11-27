@@ -552,7 +552,7 @@ If any member has a question regarding hotel booking or registration process, pl
                         <viewLayoutGuide key="safeArea" id="mos-aD-cY1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hotel" id="4UC-r6-Mff">
-                        <barButtonItem key="rightBarButtonItem" title="More Details " image="information" id="RDA-1d-MMS">
+                        <barButtonItem key="rightBarButtonItem" image="information" id="RDA-1d-MMS">
                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="moreDetails:" destination="mE4-YY-bu8" id="wG7-Cm-7dB"/>
@@ -690,7 +690,7 @@ If any member has a question regarding hotel booking or registration process, pl
                         <viewLayoutGuide key="safeArea" id="aQN-fK-pu2"/>
                     </view>
                     <navigationItem key="navigationItem" title="SANA Registration" id="imM-fN-WZ7">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="information" id="bhe-Z3-0MN">
+                        <barButtonItem key="rightBarButtonItem" image="information" id="bhe-Z3-0MN">
                             <connections>
                                 <action selector="moreDetails:" destination="MAx-j7-GNa" id="uw2-ux-0Xh"/>
                             </connections>
