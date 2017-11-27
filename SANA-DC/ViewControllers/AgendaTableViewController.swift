@@ -42,7 +42,7 @@ class AgendaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if self.data != nil{
-            return section == 0 ? "WEDNESDAY, SEPTEMBER 27" : "THURSDAY, SEPTEMBER 28"
+            return section == 0 ? "SATURDAY, JULY 7" : "SUNDAY, JULY 8"
         } else {
             return nil
         }
