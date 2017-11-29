@@ -70,5 +70,7 @@
 		<string>fb</string>
 		<string>twitter</string>
 	</array>
+	<key>CFBundleDisplayName</key>
+	<string>SANA DC</string>
 </dict>
 </plist>
