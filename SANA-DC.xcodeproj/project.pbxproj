@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D35A9792085750400D3FA95 /* SANALiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D35A9782085750400D3FA95 /* SANALiveViewController.swift */; };
 		0D46CA7B1F9ED3760091EA8C /* AttractionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */; };
 		0D7859CE1F8E99B4007EC1A6 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */; };
 		0D9688221FC1E0EF0054FA30 /* ContactSANAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D35A9782085750400D3FA95 /* SANALiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANALiveViewController.swift; sourceTree = "<group>"; };
 		0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsTableViewController.swift; sourceTree = "<group>"; };
 		0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSANAViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				0DD5A5231F9ECC4500D4ECD0 /* AttractionDetailViewController.swift */,
 				0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */,
 				0DBFC1331FC9DC5A0047595C /* AboutMeViewController.swift */,
+				0D35A9782085750400D3FA95 /* SANALiveViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				0DD3D7341F8E88AA0076DDB5 /* Constants.swift in Sources */,
 				0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */,
 				0D46CA7B1F9ED3760091EA8C /* AttractionsTableViewController.swift in Sources */,
+				0D35A9792085750400D3FA95 /* SANALiveViewController.swift in Sources */,
 				0DD3D7271F8A76A80076DDB5 /* HotelViewController.swift in Sources */,
 				0D9688221FC1E0EF0054FA30 /* ContactSANAViewController.swift in Sources */,
 				0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */,

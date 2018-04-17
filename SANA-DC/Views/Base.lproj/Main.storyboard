@@ -32,6 +32,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-DZ-Keo">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
                                         <subviews>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sindhi Ajrak" translatesAutoresizingMaskIntoConstraints="NO" id="omd-q1-XRN">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SANA 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5l-AM-OvU">
                                                 <rect key="frame" x="137" y="8" width="101.5" height="26"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="20"/>
@@ -117,8 +120,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="omd-q1-XRN" secondAttribute="trailing" id="2lV-jM-aA4"/>
                                             <constraint firstItem="N1k-dP-E9H" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="7vK-jy-wkg"/>
                                             <constraint firstItem="Z5l-AM-OvU" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="8jP-lC-eHw"/>
+                                            <constraint firstAttribute="bottom" secondItem="omd-q1-XRN" secondAttribute="bottom" id="Bu8-Ub-iYJ"/>
                                             <constraint firstItem="Ve5-KQ-qzH" firstAttribute="top" secondItem="noE-eu-Fkz" secondAttribute="bottom" constant="10" id="Cuo-lg-RXT"/>
                                             <constraint firstItem="hGt-O5-BqN" firstAttribute="top" secondItem="8Af-3n-Dbn" secondAttribute="bottom" constant="10" id="DQl-2C-m51"/>
                                             <constraint firstItem="sm3-Zh-nTQ" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="GDm-1c-Ter"/>
@@ -133,10 +138,12 @@
                                             <constraint firstItem="9lY-d5-qPz" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="SoQ-wU-L4H"/>
                                             <constraint firstItem="xFn-te-yl5" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="VEN-8X-IEX"/>
                                             <constraint firstAttribute="height" constant="700" id="VlV-Ux-2GM"/>
+                                            <constraint firstItem="omd-q1-XRN" firstAttribute="leading" secondItem="Rtv-DZ-Keo" secondAttribute="leading" id="YwD-xV-j24"/>
                                             <constraint firstItem="yiQ-4R-cmu" firstAttribute="centerX" secondItem="l69-CV-oko" secondAttribute="centerX" id="ck2-tP-Sir"/>
                                             <constraint firstItem="noE-eu-Fkz" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="dZI-aI-fMc"/>
                                             <constraint firstItem="8Af-3n-Dbn" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="hMw-WZ-i5J"/>
                                             <constraint firstItem="N1k-dP-E9H" firstAttribute="top" secondItem="hGt-O5-BqN" secondAttribute="bottom" constant="10" id="ipP-be-Aen"/>
+                                            <constraint firstItem="omd-q1-XRN" firstAttribute="top" secondItem="Rtv-DZ-Keo" secondAttribute="top" id="j0g-CS-Fqg"/>
                                             <constraint firstItem="l69-CV-oko" firstAttribute="top" secondItem="Z5l-AM-OvU" secondAttribute="bottom" constant="15" id="lCp-mZ-zLy"/>
                                             <constraint firstItem="Z5l-AM-OvU" firstAttribute="top" secondItem="Rtv-DZ-Keo" secondAttribute="top" constant="8" id="pIy-GW-7wQ"/>
                                             <constraint firstItem="xFn-te-yl5" firstAttribute="top" secondItem="sm3-Zh-nTQ" secondAttribute="bottom" constant="10" id="qh3-ds-Kzq"/>
@@ -206,6 +213,7 @@
                         <segue destination="o99-jI-Va0" kind="relationship" relationship="viewControllers" id="iC7-DT-t12"/>
                         <segue destination="GPO-xs-Ybi" kind="relationship" relationship="viewControllers" id="eeW-DH-TKA"/>
                         <segue destination="D7y-Zt-LUp" kind="relationship" relationship="viewControllers" id="oqO-ak-0Ad"/>
+                        <segue destination="FVj-52-YWg" kind="relationship" relationship="viewControllers" id="t6P-bZ-tYz"/>
                         <segue destination="JX2-h5-PAn" kind="relationship" relationship="viewControllers" id="P4X-DJ-Jfh"/>
                         <segue destination="z0y-0w-OEG" kind="relationship" relationship="viewControllers" id="302-Yw-7vR"/>
                     </connections>
@@ -742,7 +750,7 @@ If any member has a question regarding hotel booking or registration process, pl
         <scene sceneID="6PT-jE-eeg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KOX-Gg-1KK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SANA" image="second" id="qRF-Lm-9Og"/>
+                    <tabBarItem key="tabBarItem" title="SANA" image="iconSANA" id="qRF-Lm-9Og"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="4On-dp-6K0">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1538,9 +1546,11 @@ Phone: +1-240-314-0640</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sindhi Ajrak" translatesAutoresizingMaskIntoConstraints="NO" id="Ffb-eG-8Vt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="1805 N Greenleese Dr, Frederick, MD 21701" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x1V-vy-out">
                                 <rect key="frame" x="16" y="20" width="343" height="36"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="n1d-Nc-r48"/>
                                 </constraints>
@@ -1598,10 +1608,14 @@ Phone: +1-240-314-0640</string>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="x1V-vy-out" firstAttribute="leading" secondItem="DRC-BA-Az9" secondAttribute="leading" constant="16" id="0Or-ad-7If"/>
+                            <constraint firstItem="Ffb-eG-8Vt" firstAttribute="top" secondItem="DRC-BA-Az9" secondAttribute="top" id="8aZ-Y5-dox"/>
+                            <constraint firstItem="Ffb-eG-8Vt" firstAttribute="trailing" secondItem="DRC-BA-Az9" secondAttribute="trailing" id="IFW-zG-hSm"/>
                             <constraint firstItem="DRC-BA-Az9" firstAttribute="trailing" secondItem="x1V-vy-out" secondAttribute="trailing" constant="16" id="KUu-Dg-0dc"/>
                             <constraint firstItem="vuz-ew-O3u" firstAttribute="top" secondItem="x1V-vy-out" secondAttribute="bottom" constant="50" id="MOc-56-mj1"/>
+                            <constraint firstItem="Ffb-eG-8Vt" firstAttribute="bottom" secondItem="DRC-BA-Az9" secondAttribute="bottom" id="N7G-cy-9wr"/>
                             <constraint firstItem="vuz-ew-O3u" firstAttribute="leading" secondItem="DRC-BA-Az9" secondAttribute="leading" constant="20" id="RX7-8i-rPg"/>
                             <constraint firstItem="DRC-BA-Az9" firstAttribute="trailing" secondItem="vuz-ew-O3u" secondAttribute="trailing" constant="20" id="sPX-IA-WLM"/>
+                            <constraint firstItem="Ffb-eG-8Vt" firstAttribute="leading" secondItem="DRC-BA-Az9" secondAttribute="leading" id="wIM-UI-kFH"/>
                             <constraint firstItem="x1V-vy-out" firstAttribute="top" secondItem="DRC-BA-Az9" secondAttribute="top" constant="20" id="zdh-Q8-T9u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DRC-BA-Az9"/>
@@ -1673,15 +1687,94 @@ Phone: +1-240-314-0640</string>
             </objects>
             <point key="canvasLocation" x="1524" y="5153.9730134932533"/>
         </scene>
+        <!--SANA Live-->
+        <scene sceneID="bPn-Nf-kMa">
+            <objects>
+                <viewController id="Se0-a6-odB" customClass="SANALiveViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tkd-Sa-mPt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHS-b0-CDJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6L7-hC-fDv">
+                                <rect key="frame" x="169" y="258.5" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="DbM-5x-iOH"/>
+                                    <constraint firstAttribute="width" constant="37" id="YFN-KD-3DO"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PHS-b0-CDJ" firstAttribute="top" secondItem="573-HA-16l" secondAttribute="top" id="AFd-PR-Nji"/>
+                            <constraint firstItem="573-HA-16l" firstAttribute="bottom" secondItem="PHS-b0-CDJ" secondAttribute="bottom" id="I3R-Uu-nqR"/>
+                            <constraint firstItem="6L7-hC-fDv" firstAttribute="centerY" secondItem="573-HA-16l" secondAttribute="centerY" id="WLj-Dz-VK9"/>
+                            <constraint firstItem="573-HA-16l" firstAttribute="trailing" secondItem="PHS-b0-CDJ" secondAttribute="trailing" id="gkO-lg-Whd"/>
+                            <constraint firstItem="PHS-b0-CDJ" firstAttribute="leading" secondItem="573-HA-16l" secondAttribute="leading" id="i2g-ed-6j6"/>
+                            <constraint firstItem="6L7-hC-fDv" firstAttribute="centerX" secondItem="573-HA-16l" secondAttribute="centerX" id="wzk-iy-hQf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="573-HA-16l"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SANA Live" id="YSh-HW-3X1"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="6L7-hC-fDv" id="vf9-Dy-oqk"/>
+                        <outlet property="webView" destination="PHS-b0-CDJ" id="S2Y-BF-q8a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2v-UM-uNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OCE-LE-zbh">
+                    <connections>
+                        <action selector="hideParentView:" destination="Se0-a6-odB" id="imY-qV-2wD"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1524" y="5878"/>
+        </scene>
+        <!--SANA Live-->
+        <scene sceneID="pqG-hl-E9w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FVj-52-YWg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SANA Live" image="live" id="e8t-x5-nWW">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="DLV-Ba-sQU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Se0-a6-odB" kind="relationship" relationship="rootViewController" id="MiX-om-1By"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BX2-fm-Ivu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="5878"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Schedule" width="25" height="25"/>
+        <image name="Sindhi Ajrak" width="1600" height="2560"/>
         <image name="Transportation" width="25" height="25"/>
         <image name="aboutSana" width="25" height="25"/>
         <image name="attractions" width="25" height="25"/>
+        <image name="iconSANA" width="25" height="25"/>
         <image name="info" width="25" height="25"/>
         <image name="information" width="25" height="25"/>
-        <image name="second" width="30" height="30"/>
+        <image name="live" width="25" height="25"/>
         <image name="skyscraper" width="25" height="25"/>
         <image name="user" width="37" height="37"/>
     </resources>

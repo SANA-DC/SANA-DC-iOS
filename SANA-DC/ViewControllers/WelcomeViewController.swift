@@ -16,7 +16,12 @@ class WelcomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-       
+        let imageName = "Sindhi Ajrak"
+        let image = UIImage(named: imageName)
+        let imageView = UIImageView(image: image!)
+        imageView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)
+        self.view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
     }
 
     override func didReceiveMemoryWarning() {
