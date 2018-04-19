@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 class DataManager:NSObject{
     var schedule:ScheduleResponse?
@@ -27,6 +28,8 @@ class DataManager:NSObject{
     
     func getSchedule(success: @escaping (ScheduleResponse) -> Void, failure:@escaping (Error) -> Void) {
        
+        
+        
         let urlReuest = URLRequest(url: URL(string: Constants.URLConstants.firebaseURL)!)
         
         let task = URLSession.shared.dataTask(with: urlReuest) { (data, urlResponse, error) in

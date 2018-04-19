@@ -14,6 +14,7 @@
 		0D9E230B1F91A9C200D2F6C6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */; };
 		0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */; };
 		0D9E230F1F92902000D2F6C6 /* CarRentalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */; };
+		0DA307EF20881CB800F54750 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DA307EE20881CB800F54750 /* GoogleService-Info.plist */; };
 		0DB3A7721F7D5DE400B4A519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7711F7D5DE400B4A519 /* AppDelegate.swift */; };
 		0DB3A7791F7D5DE400B4A519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A7771F7D5DE400B4A519 /* Main.storyboard */; };
 		0DB3A77B1F7D5DE400B4A519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A77A1F7D5DE400B4A519 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTransportationDetailsViewController.swift; sourceTree = "<group>"; };
 		0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRentalsViewController.swift; sourceTree = "<group>"; };
+		0DA307EE20881CB800F54750 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DB3A76E1F7D5DE400B4A519 /* SANA-DC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SANA-DC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB3A7711F7D5DE400B4A519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DB3A7781F7D5DE400B4A519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +57,6 @@
 		0DB3A78D1F7DA10D00B4A519 /* Optimist_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Optimist_Bd.ttf; sourceTree = "<group>"; };
 		0DB3A7911F7F01BE00B4A519 /* SANA_DC.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SANA_DC.json; sourceTree = "<group>"; };
 		0DB3A7921F7F028200B4A519 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
-		0DB3A7941F832EAF00B4A519 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DB3A7951F842E4A00B4A519 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0DBFC1331FC9DC5A0047595C /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		0DD3D7241F8831E90076DDB5 /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 		0DB3A7701F7D5DE400B4A519 /* SANA-DC */ = {
 			isa = PBXGroup;
 			children = (
+				0DA307EE20881CB800F54750 /* GoogleService-Info.plist */,
 				0DB3A7951F842E4A00B4A519 /* DataManager.swift */,
 				0DD3D7331F8E88AA0076DDB5 /* Constants.swift */,
 				0DD3D7321F8E887A0076DDB5 /* Views */,
@@ -117,7 +119,6 @@
 		0DB3A7851F7D632E00B4A519 /* Suppporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0DB3A7941F832EAF00B4A519 /* GoogleService-Info.plist */,
 				0DB3A78D1F7DA10D00B4A519 /* Optimist_Bd.ttf */,
 				0DB3A78B1F7DA10B00B4A519 /* Optimist_It.ttf */,
 				0DB3A78C1F7DA10C00B4A519 /* Optimist_Rg.ttf */,
@@ -188,7 +189,6 @@
 				0DB3A76B1F7D5DE400B4A519 /* Frameworks */,
 				0DB3A76C1F7D5DE400B4A519 /* Resources */,
 				8B1DDEBC7E6099340650A2D5 /* [CP] Embed Pods Frameworks */,
-				001666E9E55C858410BCF90D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DB3A78E1F7DA31400B4A519 /* Optimist_Bd.ttf in Resources */,
+				0DA307EF20881CB800F54750 /* GoogleService-Info.plist in Resources */,
 				0DB3A78F1F7DA31400B4A519 /* Optimist_It.ttf in Resources */,
 				0DB3A7901F7DA31400B4A519 /* Optimist_Rg.ttf in Resources */,
 				0DB3A77E1F7D5DE400B4A519 /* LaunchScreen.storyboard in Resources */,
@@ -250,34 +251,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		001666E9E55C858410BCF90D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8AD43E2ECE7E0D3DE02589DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SANA-DC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8B1DDEBC7E6099340650A2D5 /* [CP] Embed Pods Frameworks */ = {
@@ -286,9 +275,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
