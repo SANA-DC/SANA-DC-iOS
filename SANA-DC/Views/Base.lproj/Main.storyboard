@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -69,43 +69,43 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- SANA registration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-KQ-qzH">
-                                                <rect key="frame" x="112.5" y="248" width="150.5" height="22"/>
+                                                <rect key="frame" x="112.5" y="248" width="150.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Tranportation details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT8-rC-Jwi">
-                                                <rect key="frame" x="100.5" y="280.5" width="174" height="22.5"/>
+                                                <rect key="frame" x="100.5" y="281" width="174" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Near by attractions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sm3-Zh-nTQ">
-                                                <rect key="frame" x="107" y="313" width="161" height="22.5"/>
+                                                <rect key="frame" x="107" y="313.5" width="161" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Agenda" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFn-te-yl5">
-                                                <rect key="frame" x="150.5" y="345.5" width="74.5" height="22.5"/>
+                                                <rect key="frame" x="150.5" y="346" width="74.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- About the developer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGt-O5-BqN">
-                                                <rect key="frame" x="102.5" y="410.5" width="169" height="22.5"/>
+                                                <rect key="frame" x="102.5" y="411" width="169" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Contact SANA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Af-3n-Dbn">
-                                                <rect key="frame" x="126.5" y="378" width="121.5" height="22.5"/>
+                                                <rect key="frame" x="126.5" y="378.5" width="121.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-dP-E9H">
-                                                <rect key="frame" x="67" y="443" width="240" height="128"/>
+                                                <rect key="frame" x="67" y="443.5" width="240" height="128"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="MIo-Sn-avE"/>
                                                     <constraint firstAttribute="width" constant="240" id="XSl-qR-jfb"/>
@@ -239,28 +239,40 @@
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:30 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCg-X7-0zR">
-                                            <rect key="frame" x="36" y="23" width="53.5" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCg-X7-0zR">
+                                            <rect key="frame" x="36" y="16" width="40" height="0.0"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="Phw-4G-my5"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="15"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGu-MN-M5Y">
-                                            <rect key="frame" x="36" y="44.5" width="45.5" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGu-MN-M5Y">
+                                            <rect key="frame" x="49" y="17.5" width="14" height="12.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="12.5" id="ExC-KB-p6X"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="15"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Sindh Development" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHM-zh-MKv">
-                                            <rect key="frame" x="109.5" y="16" width="223.5" height="22.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHM-zh-MKv">
+                                            <rect key="frame" x="96" y="16" width="237" height="0.0"/>
                                             <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8th Floor, room 24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-nj-XDO">
-                                            <rect key="frame" x="109" y="40.5" width="137.5" height="22.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-nj-XDO">
+                                            <rect key="frame" x="95.5" y="18" width="0.0" height="0.0"/>
                                             <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsK-uM-b9K">
+                                            <rect key="frame" x="36" y="35" width="40" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -271,18 +283,23 @@
                                         <constraint firstItem="wQ4-nj-XDO" firstAttribute="top" secondItem="BHM-zh-MKv" secondAttribute="bottom" constant="2" id="DPv-Ee-vDD"/>
                                         <constraint firstItem="xCg-X7-0zR" firstAttribute="leading" secondItem="nHg-ur-3Wu" secondAttribute="leadingMargin" constant="20" id="Igu-LE-NCp"/>
                                         <constraint firstItem="BHM-zh-MKv" firstAttribute="top" secondItem="nHg-ur-3Wu" secondAttribute="topMargin" constant="5" id="KRf-ph-4JZ"/>
-                                        <constraint firstItem="XGu-MN-M5Y" firstAttribute="leading" secondItem="nHg-ur-3Wu" secondAttribute="leadingMargin" constant="20" id="PbA-3d-xgh"/>
                                         <constraint firstItem="BHM-zh-MKv" firstAttribute="trailing" secondItem="nHg-ur-3Wu" secondAttribute="trailingMargin" id="QOD-B8-8vP"/>
+                                        <constraint firstItem="BHM-zh-MKv" firstAttribute="leading" secondItem="xCg-X7-0zR" secondAttribute="trailing" constant="20" id="Qgt-lV-z4x"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wQ4-nj-XDO" secondAttribute="trailing" constant="20" symbolic="YES" id="Rzl-NO-I1I"/>
-                                        <constraint firstItem="BHM-zh-MKv" firstAttribute="leading" secondItem="xCg-X7-0zR" secondAttribute="trailing" constant="20" id="VYw-Cj-eJn"/>
-                                        <constraint firstItem="xCg-X7-0zR" firstAttribute="top" secondItem="nHg-ur-3Wu" secondAttribute="topMargin" constant="12" id="nMk-lt-1Wa"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xCg-X7-0zR" secondAttribute="trailingMargin" id="tQ5-DA-hJx"/>
+                                        <constraint firstItem="XGu-MN-M5Y" firstAttribute="centerX" secondItem="xCg-X7-0zR" secondAttribute="centerX" id="kCc-oL-Lni"/>
+                                        <constraint firstItem="xCg-X7-0zR" firstAttribute="top" secondItem="nHg-ur-3Wu" secondAttribute="topMargin" constant="5" id="nMk-lt-1Wa"/>
+                                        <constraint firstItem="RsK-uM-b9K" firstAttribute="trailing" secondItem="xCg-X7-0zR" secondAttribute="trailing" id="qli-pR-U8U"/>
+                                        <constraint firstItem="RsK-uM-b9K" firstAttribute="leading" secondItem="xCg-X7-0zR" secondAttribute="leading" id="ugi-lS-0uf"/>
+                                        <constraint firstItem="RsK-uM-b9K" firstAttribute="top" secondItem="XGu-MN-M5Y" secondAttribute="bottom" constant="5" id="vsc-ql-J8n"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XGu-MN-M5Y" secondAttribute="trailingMargin" id="xty-x4-m0C"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
+                                    <outlet property="endTime" destination="RsK-uM-b9K" id="tEg-Tz-OYL"/>
+                                    <outlet property="location" destination="wQ4-nj-XDO" id="dnr-om-Jqz"/>
+                                    <outlet property="starttime" destination="xCg-X7-0zR" id="NUF-SO-isj"/>
                                     <outlet property="title" destination="BHM-zh-MKv" id="C6r-1o-aBU"/>
                                 </connections>
                             </tableViewCell>
@@ -812,7 +829,7 @@ If any member has a question regarding hotel booking or registration process, pl
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="United States Holocaust Memorial Museum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tln-AS-BUk">
-                                                    <rect key="frame" x="16" y="24" width="310" height="22.5"/>
+                                                    <rect key="frame" x="16" y="13" width="310" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -984,11 +1001,11 @@ If any member has a question regarding hotel booking or registration process, pl
                                         <rect key="frame" x="0.0" y="630" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3kA-NS-gGY" id="hEi-Aj-tNO">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smithsonian's National Zoo &amp; Conservation Biology Institute" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0N-ZN-MdX">
-                                                    <rect key="frame" x="16" y="12.5" width="310" height="44.5"/>
+                                                    <rect key="frame" x="8" y="12.5" width="333" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1225,7 +1242,7 @@ If any member has a question regarding hotel booking or registration process, pl
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metro Station" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQh-UI-5Ky">
-                                                    <rect key="frame" x="16" y="24" width="310" height="23"/>
+                                                    <rect key="frame" x="16" y="23.5" width="310" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1265,11 +1282,11 @@ If any member has a question regarding hotel booking or registration process, pl
                                         <rect key="frame" x="0.0" y="657.5" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xo-Vk-oWH" id="R2B-ta-CGa">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Rentals" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cC9-BP-vaU">
-                                                    <rect key="frame" x="16" y="24" width="310" height="22.5"/>
+                                                    <rect key="frame" x="8" y="24" width="333" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>

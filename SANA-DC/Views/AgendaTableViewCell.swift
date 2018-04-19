@@ -11,6 +11,9 @@ import UIKit
 class AgendaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var starttime: UILabel!
+    @IBOutlet weak var endTime: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

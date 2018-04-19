@@ -173,16 +173,45 @@ class AgendaTableViewController: UITableViewController {
         
         if indexPath.section == 0{
             cell.title.text = day1Array[indexPath.row].session
+            cell.starttime.text = day1Array[indexPath.row].startTime
+            if let room = day1Array[indexPath.row].room{
+                if room != ""{
+                    cell.location.text = "Room: \(room)"
+                } else {
+                    cell.location.text = ""
+
+                }
+            }
+            cell.endTime.text = day1Array[indexPath.row].endTime
+
 
         } else if indexPath.section == 1{
             cell.title.text = day2Array[indexPath.row].session
+            cell.starttime.text = day2Array[indexPath.row].startTime
+            if let room = day2Array[indexPath.row].room{
+                
+                if room != ""{
+                    cell.location.text = "Room: \(room)"
+                } else {
+                    cell.location.text = ""
 
+                }
+            }
+            cell.endTime.text = day2Array[indexPath.row].endTime
         } else {
             cell.title.text = day3Array[indexPath.row].session
+            cell.starttime.text = day3Array[indexPath.row].startTime
+            if let room = day3Array[indexPath.row].room{
+                if room != ""{
+                    cell.location.text = "Room: \(room)"
+                } else {
+                    cell.location.text = ""
 
+                }
+                
+            }
+            cell.endTime.text = day3Array[indexPath.row].endTime
         }
-        
-
         return cell
     }
     
