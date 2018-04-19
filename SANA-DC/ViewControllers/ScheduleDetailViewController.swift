@@ -10,28 +10,28 @@ import UIKit
 
 class ScheduleDetailViewController: UIViewController {
 
+    var session:Session?
+    var day:String?
+    
+    @IBOutlet weak var about: UITextView!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var fullTime: UILabel!
+    @IBOutlet weak var sessionTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         self.navigationItem.title = "Info"
+        
+        if let session = self.session{
+            if session.room != ""{
+                location.text = session.room
+            }
+            date.text = day
+            fullTime.text = "\(session.startTime ?? "") - \(session.endTime ?? "")"
+            sessionTitle.text = session.session
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

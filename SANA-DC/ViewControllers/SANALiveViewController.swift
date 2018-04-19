@@ -17,7 +17,7 @@ class SANALiveViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         
         webView.navigationDelegate = self
-        self.webView.load(URLRequest(url: URL(string: Constants.URLConstants.sanaURL)!))
+        self.webView.load(URLRequest(url: URL(string: Constants.URLConstants.SANALive)!))
         
         
     }

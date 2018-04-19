@@ -19,6 +19,9 @@ class AgendaTableViewController: UITableViewController {
     var spinner: UIActivityIndicatorView?
     var storageRef:DatabaseReference!
 
+    var sessionSelected:Session?
+    var daySelected:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -216,6 +219,22 @@ class AgendaTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.section {
+        case 0:
+            sessionSelected = day1Array[indexPath.row]
+            daySelected = "Friday, July 6, 2018"
+        case 1:
+            sessionSelected = day2Array[indexPath.row]
+            daySelected = "Saturday, July 7, 2018"
+        case 2:
+            sessionSelected = day3Array[indexPath.row]
+            daySelected = "Sunday, July 8, 2018"
+        default:
+            break
+        }
+        
+        
         self.performSegue(withIdentifier: "ToScheduleDeatilVC", sender: self)
     }
  
@@ -258,15 +277,20 @@ class AgendaTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if let destinationVC = segue.destination as? ScheduleDetailViewController{
+            destinationVC.session = self.sessionSelected
+            destinationVC.day = self.daySelected
+        }
     }
-    */
+    
 
     
     func setupSpinner(){
