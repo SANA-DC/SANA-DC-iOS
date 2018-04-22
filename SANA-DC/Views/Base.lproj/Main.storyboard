@@ -23,11 +23,11 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="WelcomeViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="636"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-zN-SnD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-DZ-Keo">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
@@ -62,14 +62,14 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Book hotel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noE-eu-Fkz">
-                                                <rect key="frame" x="139" y="215.5" width="97.5" height="22.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Agenda" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noE-eu-Fkz">
+                                                <rect key="frame" x="150.5" y="215.5" width="74.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- SANA registration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-KQ-qzH">
-                                                <rect key="frame" x="112.5" y="248" width="150.5" height="22.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- SANA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-KQ-qzH">
+                                                <rect key="frame" x="158.5" y="248" width="59" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -86,29 +86,35 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Agenda" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFn-te-yl5">
-                                                <rect key="frame" x="150.5" y="346" width="74.5" height="22.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Hotel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFn-te-yl5">
+                                                <rect key="frame" x="159" y="346" width="57.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- About the developer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGt-O5-BqN">
-                                                <rect key="frame" x="102.5" y="411" width="169" height="22.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Attractions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGt-O5-BqN">
+                                                <rect key="frame" x="137" y="411" width="100" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Contact SANA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Af-3n-Dbn">
-                                                <rect key="frame" x="126.5" y="378.5" width="121.5" height="22.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- About Me" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hf-ni-vIe">
+                                                <rect key="frame" x="143" y="508.5" width="90" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- SANA Live" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Af-3n-Dbn">
+                                                <rect key="frame" x="140.5" y="378.5" width="93.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-dP-E9H">
-                                                <rect key="frame" x="67" y="443.5" width="240" height="128"/>
+                                                <rect key="frame" x="67.5" y="541" width="240" height="128"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="MIo-Sn-avE"/>
-                                                    <constraint firstAttribute="width" constant="240" id="XSl-qR-jfb"/>
+                                                    <constraint firstAttribute="height" constant="128" id="kSK-GF-Si8"/>
+                                                    <constraint firstAttribute="width" constant="240" id="ssL-Vu-411"/>
                                                 </constraints>
                                                 <string key="text">Bethesda North Marriott Hotel &amp; Conference Center
  5701 Marinelli Road Rockville Maryland 20852 USA</string>
@@ -117,20 +123,37 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                                             </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Contact SANA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRZ-F3-G4s">
+                                                <rect key="frame" x="127.5" y="476" width="121.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Halal Restaurants" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPn-Qf-Ouk">
+                                                <rect key="frame" x="113" y="443.5" width="150" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Optimist-Regular" family="Optimist" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="omd-q1-XRN" secondAttribute="trailing" id="2lV-jM-aA4"/>
                                             <constraint firstItem="N1k-dP-E9H" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="7vK-jy-wkg"/>
                                             <constraint firstItem="Z5l-AM-OvU" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="8jP-lC-eHw"/>
+                                            <constraint firstItem="qPn-Qf-Ouk" firstAttribute="centerX" secondItem="omd-q1-XRN" secondAttribute="centerX" id="9k6-bJ-8Ue"/>
+                                            <constraint firstItem="hGt-O5-BqN" firstAttribute="top" secondItem="8Af-3n-Dbn" secondAttribute="bottom" constant="10" id="AWQ-uI-gDm"/>
                                             <constraint firstAttribute="bottom" secondItem="omd-q1-XRN" secondAttribute="bottom" id="Bu8-Ub-iYJ"/>
                                             <constraint firstItem="Ve5-KQ-qzH" firstAttribute="top" secondItem="noE-eu-Fkz" secondAttribute="bottom" constant="10" id="Cuo-lg-RXT"/>
-                                            <constraint firstItem="hGt-O5-BqN" firstAttribute="top" secondItem="8Af-3n-Dbn" secondAttribute="bottom" constant="10" id="DQl-2C-m51"/>
                                             <constraint firstItem="sm3-Zh-nTQ" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="GDm-1c-Ter"/>
                                             <constraint firstItem="noE-eu-Fkz" firstAttribute="top" secondItem="9lY-d5-qPz" secondAttribute="bottom" constant="25" id="GK9-lF-hjr"/>
                                             <constraint firstItem="hGt-O5-BqN" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="GQd-vY-XCB"/>
+                                            <constraint firstItem="qPn-Qf-Ouk" firstAttribute="top" secondItem="hGt-O5-BqN" secondAttribute="bottom" constant="10" id="JSM-f8-QAG"/>
                                             <constraint firstItem="yiQ-4R-cmu" firstAttribute="top" secondItem="l69-CV-oko" secondAttribute="bottom" constant="15" id="KZV-d6-nM9"/>
+                                            <constraint firstItem="kRZ-F3-G4s" firstAttribute="top" secondItem="qPn-Qf-Ouk" secondAttribute="bottom" constant="10" id="Kv2-3f-Xlf"/>
+                                            <constraint firstItem="N1k-dP-E9H" firstAttribute="top" secondItem="9Hf-ni-vIe" secondAttribute="bottom" constant="10" id="L29-uI-QEf"/>
                                             <constraint firstItem="Ve5-KQ-qzH" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="Ntm-zY-vbf"/>
+                                            <constraint firstItem="9Hf-ni-vIe" firstAttribute="top" secondItem="kRZ-F3-G4s" secondAttribute="bottom" constant="10" id="Nyp-cW-fNh"/>
                                             <constraint firstItem="HT8-rC-Jwi" firstAttribute="top" secondItem="Ve5-KQ-qzH" secondAttribute="bottom" constant="10" id="OTM-bw-zz3"/>
                                             <constraint firstItem="l69-CV-oko" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="RGI-gh-mmN"/>
                                             <constraint firstItem="sm3-Zh-nTQ" firstAttribute="top" secondItem="HT8-rC-Jwi" secondAttribute="bottom" constant="10" id="RLR-02-Knp"/>
@@ -139,12 +162,13 @@
                                             <constraint firstItem="xFn-te-yl5" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="VEN-8X-IEX"/>
                                             <constraint firstAttribute="height" constant="700" id="VlV-Ux-2GM"/>
                                             <constraint firstItem="omd-q1-XRN" firstAttribute="leading" secondItem="Rtv-DZ-Keo" secondAttribute="leading" id="YwD-xV-j24"/>
+                                            <constraint firstItem="kRZ-F3-G4s" firstAttribute="centerX" secondItem="omd-q1-XRN" secondAttribute="centerX" id="bdI-mo-mtu"/>
                                             <constraint firstItem="yiQ-4R-cmu" firstAttribute="centerX" secondItem="l69-CV-oko" secondAttribute="centerX" id="ck2-tP-Sir"/>
                                             <constraint firstItem="noE-eu-Fkz" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="dZI-aI-fMc"/>
                                             <constraint firstItem="8Af-3n-Dbn" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="hMw-WZ-i5J"/>
-                                            <constraint firstItem="N1k-dP-E9H" firstAttribute="top" secondItem="hGt-O5-BqN" secondAttribute="bottom" constant="10" id="ipP-be-Aen"/>
                                             <constraint firstItem="omd-q1-XRN" firstAttribute="top" secondItem="Rtv-DZ-Keo" secondAttribute="top" id="j0g-CS-Fqg"/>
                                             <constraint firstItem="l69-CV-oko" firstAttribute="top" secondItem="Z5l-AM-OvU" secondAttribute="bottom" constant="15" id="lCp-mZ-zLy"/>
+                                            <constraint firstItem="9Hf-ni-vIe" firstAttribute="centerX" secondItem="omd-q1-XRN" secondAttribute="centerX" id="lfK-Pz-485"/>
                                             <constraint firstItem="Z5l-AM-OvU" firstAttribute="top" secondItem="Rtv-DZ-Keo" secondAttribute="top" constant="8" id="pIy-GW-7wQ"/>
                                             <constraint firstItem="xFn-te-yl5" firstAttribute="top" secondItem="sm3-Zh-nTQ" secondAttribute="bottom" constant="10" id="qh3-ds-Kzq"/>
                                             <constraint firstItem="HT8-rC-Jwi" firstAttribute="centerX" secondItem="Rtv-DZ-Keo" secondAttribute="centerX" id="uVS-Ty-soj"/>
@@ -186,7 +210,7 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome!" id="829-Ub-VY3"/>
-                    <size key="freeformSize" width="375" height="700"/>
+                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="scrollView" destination="uAn-zN-SnD" id="aon-Eh-o69"/>
                     </connections>
