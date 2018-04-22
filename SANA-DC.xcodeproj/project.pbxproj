@@ -15,6 +15,8 @@
 		0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */; };
 		0D9E230F1F92902000D2F6C6 /* CarRentalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */; };
 		0DA307EF20881CB800F54750 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DA307EE20881CB800F54750 /* GoogleService-Info.plist */; };
+		0DA307F1208C081700F54750 /* HalalRestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA307F0208C081700F54750 /* HalalRestaurantsTableViewController.swift */; };
+		0DA307F3208C0A6700F54750 /* HalalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA307F2208C0A6700F54750 /* HalalTableViewCell.swift */; };
 		0DB3A7721F7D5DE400B4A519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3A7711F7D5DE400B4A519 /* AppDelegate.swift */; };
 		0DB3A7791F7D5DE400B4A519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A7771F7D5DE400B4A519 /* Main.storyboard */; };
 		0DB3A77B1F7D5DE400B4A519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3A77A1F7D5DE400B4A519 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTransportationDetailsViewController.swift; sourceTree = "<group>"; };
 		0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRentalsViewController.swift; sourceTree = "<group>"; };
 		0DA307EE20881CB800F54750 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0DA307F0208C081700F54750 /* HalalRestaurantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalalRestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		0DA307F2208C0A6700F54750 /* HalalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalalTableViewCell.swift; sourceTree = "<group>"; };
 		0DB3A76E1F7D5DE400B4A519 /* SANA-DC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SANA-DC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB3A7711F7D5DE400B4A519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DB3A7781F7D5DE400B4A519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */,
 				0DBFC1331FC9DC5A0047595C /* AboutMeViewController.swift */,
 				0D35A9782085750400D3FA95 /* SANALiveViewController.swift */,
+				0DA307F0208C081700F54750 /* HalalRestaurantsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			children = (
 				0DB3A7771F7D5DE400B4A519 /* Main.storyboard */,
 				0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */,
+				0DA307F2208C0A6700F54750 /* HalalTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,10 +307,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD3D7341F8E88AA0076DDB5 /* Constants.swift in Sources */,
+				0DA307F3208C0A6700F54750 /* HalalTableViewCell.swift in Sources */,
 				0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */,
 				0D46CA7B1F9ED3760091EA8C /* AttractionsTableViewController.swift in Sources */,
 				0D35A9792085750400D3FA95 /* SANALiveViewController.swift in Sources */,
 				0DD3D7271F8A76A80076DDB5 /* HotelViewController.swift in Sources */,
+				0DA307F1208C081700F54750 /* HalalRestaurantsTableViewController.swift in Sources */,
 				0D9688221FC1E0EF0054FA30 /* ContactSANAViewController.swift in Sources */,
 				0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */,
 				0DD3D7311F8C48240076DDB5 /* AirportDetailsViewController.swift in Sources */,
