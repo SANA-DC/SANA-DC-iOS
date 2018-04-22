@@ -212,11 +212,11 @@
                         <segue destination="KOX-Gg-1KK" kind="relationship" relationship="viewControllers" id="WSN-iX-3gr"/>
                         <segue destination="o99-jI-Va0" kind="relationship" relationship="viewControllers" id="iC7-DT-t12"/>
                         <segue destination="auq-6r-OMs" kind="relationship" relationship="viewControllers" id="Jgi-LF-v3Y"/>
-                        <segue destination="GPO-xs-Ybi" kind="relationship" relationship="viewControllers" id="eeW-DH-TKA"/>
                         <segue destination="FVj-52-YWg" kind="relationship" relationship="viewControllers" id="t6P-bZ-tYz"/>
+                        <segue destination="GPO-xs-Ybi" kind="relationship" relationship="viewControllers" id="eeW-DH-TKA"/>
+                        <segue destination="All-QQ-1ye" kind="relationship" relationship="viewControllers" id="HnW-Gk-qLa"/>
                         <segue destination="JX2-h5-PAn" kind="relationship" relationship="viewControllers" id="P4X-DJ-Jfh"/>
                         <segue destination="z0y-0w-OEG" kind="relationship" relationship="viewControllers" id="302-Yw-7vR"/>
-                        <segue destination="All-QQ-1ye" kind="relationship" relationship="viewControllers" id="HnW-Gk-qLa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -605,7 +605,7 @@ If any member has a question regarding hotel booking or registration process, pl
             </objects>
             <point key="canvasLocation" x="1524" y="491.60419790104953"/>
         </scene>
-        <!--SANA Registration-->
+        <!--SANA-->
         <scene sceneID="gN9-FF-loi">
             <objects>
                 <viewController id="MAx-j7-GNa" customClass="SANARegistrationViewController" customModule="SANA_DC" customModuleProvider="target" sceneMemberID="viewController">
@@ -720,7 +720,7 @@ If any member has a question regarding hotel booking or registration process, pl
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aQN-fK-pu2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SANA Registration" id="imM-fN-WZ7">
+                    <navigationItem key="navigationItem" title="SANA" id="imM-fN-WZ7">
                         <barButtonItem key="rightBarButtonItem" image="information" id="bhe-Z3-0MN">
                             <connections>
                                 <action selector="moreDetails:" destination="MAx-j7-GNa" id="uw2-ux-0Xh"/>
