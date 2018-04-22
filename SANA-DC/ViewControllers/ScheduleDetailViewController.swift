@@ -32,6 +32,12 @@ class ScheduleDetailViewController: UIViewController {
             date.text = day
             fullTime.text = "\(session.startTime ?? "") - \(session.endTime ?? "")"
             sessionTitle.text = session.session
+            
+            if session.category == "Speaker Session"{
+                about.text = "Speaker: \(session.featuring ?? "")"
+            } else {
+                about.text = "Category: \(session.category ?? "")"
+            }
         }
     }
 }
