@@ -49,6 +49,7 @@
 		0DA307EE20881CB800F54750 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DA307F0208C081700F54750 /* HalalRestaurantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalalRestaurantsTableViewController.swift; sourceTree = "<group>"; };
 		0DA307F2208C0A6700F54750 /* HalalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalalTableViewCell.swift; sourceTree = "<group>"; };
+		0DA307F4208EB91000F54750 /* SANA-DC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SANA-DC.entitlements"; sourceTree = "<group>"; };
 		0DB3A76E1F7D5DE400B4A519 /* SANA-DC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SANA-DC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB3A7711F7D5DE400B4A519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DB3A7781F7D5DE400B4A519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		0DB3A7701F7D5DE400B4A519 /* SANA-DC */ = {
 			isa = PBXGroup;
 			children = (
+				0DA307F4208EB91000F54750 /* SANA-DC.entitlements */,
 				0DA307EE20881CB800F54750 /* GoogleService-Info.plist */,
 				0DB3A7951F842E4A00B4A519 /* DataManager.swift */,
 				0DD3D7331F8E88AA0076DDB5 /* Constants.swift */,
@@ -217,7 +219,12 @@
 				TargetAttributes = {
 					0DB3A76D1F7D5DE400B4A519 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -284,6 +291,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SANA-DC/Pods-SANA-DC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -291,6 +299,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -468,13 +477,17 @@
 			baseConfigurationReference = D3FBAFA71070AD94F2FA233C /* Pods-SANA-DC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "SANA-DC/SANA-DC.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saleem Sangi (2HY7YW46EF)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4B67YBPGRF;
 				INFOPLIST_FILE = "SANA-DC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.saleem.SANA-DC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a10e9007-7222-41a1-93a3-82b30a20f5f1";
+				PROVISIONING_PROFILE_SPECIFIER = "SANA-ios-notification";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -485,13 +498,17 @@
 			baseConfigurationReference = 826B44A71588F9247D08FD70 /* Pods-SANA-DC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "SANA-DC/SANA-DC.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4B67YBPGRF;
 				INFOPLIST_FILE = "SANA-DC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.saleem.SANA-DC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c9755b66-6e27-40cd-98b1-286a576d59ec";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Distribution SANA";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

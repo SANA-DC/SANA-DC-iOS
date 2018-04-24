@@ -8,9 +8,10 @@
 
 import UIKit
 import Firebase
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate, MessagingDelegate {
 
     var window: UIWindow?
 
@@ -19,8 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         application.statusBarStyle = .lightContent
         
-        FirebaseApp.configure()
+
+        
+        UNUserNotificationCenter.current().delegate = self as UNUserNotificationCenterDelegate
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions, completionHandler: {_, _ in })
+        
         window?.tintColor = .gray
+        
+        Messaging.messaging().delegate = self
+        application.registerForRemoteNotifications()
+        
+        FirebaseApp.configure()
         return true
     }
 
@@ -47,5 +58,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    // The callback to handle data message received via FCM for devices running iOS 10 or above.
+    func application(received remoteMessage: MessagingRemoteMessage) {
+        print(remoteMessage.appData)
+    }
 }
 
