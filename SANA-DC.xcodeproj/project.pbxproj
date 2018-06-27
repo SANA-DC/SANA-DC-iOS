@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0D35A9792085750400D3FA95 /* SANALiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D35A9782085750400D3FA95 /* SANALiveViewController.swift */; };
+		0D41F23D20D73C7C000EC053 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41F23C20D73C7C000EC053 /* VotingViewController.swift */; };
 		0D46CA7B1F9ED3760091EA8C /* AttractionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */; };
 		0D7859CE1F8E99B4007EC1A6 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */; };
 		0D9688221FC1E0EF0054FA30 /* ContactSANAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */; };
+		0D9B3BC120C46BAC00F9634A /* SYNATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9B3BC020C46BAC00F9634A /* SYNATableViewController.swift */; };
+		0D9B3BC320C46D6C00F9634A /* SYNAAgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9B3BC220C46D6C00F9634A /* SYNAAgendaTableViewController.swift */; };
 		0D9E230B1F91A9C200D2F6C6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */; };
 		0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */; };
 		0D9E230F1F92902000D2F6C6 /* CarRentalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */; };
@@ -40,9 +43,12 @@
 
 /* Begin PBXFileReference section */
 		0D35A9782085750400D3FA95 /* SANALiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANALiveViewController.swift; sourceTree = "<group>"; };
+		0D41F23C20D73C7C000EC053 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
 		0D46CA7A1F9ED3760091EA8C /* AttractionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsTableViewController.swift; sourceTree = "<group>"; };
 		0D7859CD1F8E99B4007EC1A6 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		0D9688211FC1E0EF0054FA30 /* ContactSANAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSANAViewController.swift; sourceTree = "<group>"; };
+		0D9B3BC020C46BAC00F9634A /* SYNATableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYNATableViewController.swift; sourceTree = "<group>"; };
+		0D9B3BC220C46D6C00F9634A /* SYNAAgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYNAAgendaTableViewController.swift; sourceTree = "<group>"; };
 		0D9E230A1F91A9C200D2F6C6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		0D9E230C1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTransportationDetailsViewController.swift; sourceTree = "<group>"; };
 		0D9E230E1F92902000D2F6C6 /* CarRentalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRentalsViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +160,9 @@
 				0DBFC1331FC9DC5A0047595C /* AboutMeViewController.swift */,
 				0D35A9782085750400D3FA95 /* SANALiveViewController.swift */,
 				0DA307F0208C081700F54750 /* HalalRestaurantsTableViewController.swift */,
+				0D9B3BC020C46BAC00F9634A /* SYNATableViewController.swift */,
+				0D9B3BC220C46D6C00F9634A /* SYNAAgendaTableViewController.swift */,
+				0D41F23C20D73C7C000EC053 /* VotingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -318,12 +327,15 @@
 				0DD3D7341F8E88AA0076DDB5 /* Constants.swift in Sources */,
 				0DA307F3208C0A6700F54750 /* HalalTableViewCell.swift in Sources */,
 				0DB3A7931F7F028200B4A519 /* AgendaTableViewController.swift in Sources */,
+				0D9B3BC320C46D6C00F9634A /* SYNAAgendaTableViewController.swift in Sources */,
 				0D46CA7B1F9ED3760091EA8C /* AttractionsTableViewController.swift in Sources */,
 				0D35A9792085750400D3FA95 /* SANALiveViewController.swift in Sources */,
 				0DD3D7271F8A76A80076DDB5 /* HotelViewController.swift in Sources */,
 				0DA307F1208C081700F54750 /* HalalRestaurantsTableViewController.swift in Sources */,
 				0D9688221FC1E0EF0054FA30 /* ContactSANAViewController.swift in Sources */,
+				0D9B3BC120C46BAC00F9634A /* SYNATableViewController.swift in Sources */,
 				0D9E230D1F928B2200D2F6C6 /* OtherTransportationDetailsViewController.swift in Sources */,
+				0D41F23D20D73C7C000EC053 /* VotingViewController.swift in Sources */,
 				0DD3D7311F8C48240076DDB5 /* AirportDetailsViewController.swift in Sources */,
 				0DD3D72F1F8C0DAA0076DDB5 /* TransportationTableViewController.swift in Sources */,
 				0DB3A7961F842E4A00B4A519 /* DataManager.swift in Sources */,

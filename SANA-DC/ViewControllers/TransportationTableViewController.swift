@@ -12,7 +12,8 @@ class TransportationTableViewController: UITableViewController {
 
     var airportSelection = 0
     var busStation = false
-    
+    var metroMap = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,11 +43,19 @@ class TransportationTableViewController: UITableViewController {
         } else if indexPath.section == 2{ // Other Transportation
             if indexPath.row == 0 || indexPath.row == 1{
                 busStation = true
+                metroMap = false
+
                 self.performSegue(withIdentifier: "OtherTransportation", sender: self)
             } else if indexPath.row == 2{
                 busStation = false
+                metroMap = false
+
                 self.performSegue(withIdentifier: "OtherTransportation", sender: self)
-            }  else {
+            } else if indexPath.row == 3{
+                metroMap = true
+                self.performSegue(withIdentifier: "OtherTransportation", sender: self)
+            }
+            else if indexPath.row == 4 {
                 self.performSegue(withIdentifier: "CarRental", sender: self)
             }
         }
@@ -128,6 +137,7 @@ class TransportationTableViewController: UITableViewController {
         else if segue.identifier == "OtherTransportation"{
             let otherTransportation = segue.destination as? OtherTransportationDetailsViewController
             otherTransportation?.busStation = self.busStation
+            otherTransportation?.map = self.metroMap
         }
             
     }

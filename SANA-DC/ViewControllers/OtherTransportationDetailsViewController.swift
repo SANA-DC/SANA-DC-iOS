@@ -15,13 +15,16 @@ class OtherTransportationDetailsViewController: UIViewController,WKNavigationDel
     @IBOutlet weak var webView: WKWebView!
 
     var busStation = false
-    
+    var map = false
     override func viewDidLoad() {
         super.viewDidLoad()
 
         webView.navigationDelegate = self
-        
-        if busStation{
+        if map{
+            self.navigationItem.title = "Metro Map"
+            self.webView.load(URLRequest(url: URL(string: "https://www.wmata.com/schedules/maps/upload/2017-System-Map.pdf")!))
+        }
+        else if busStation{
             self.navigationItem.title = "Station"
             self.webView.load(URLRequest(url: URL(string: Constants.URLConstants.busStation)!))
         }  else {
