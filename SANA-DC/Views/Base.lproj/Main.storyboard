@@ -2160,7 +2160,7 @@ Rockville, MD 20852
         <scene sceneID="b3I-9L-Xml">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nUG-ce-MU3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SYNA" image="second" id="EZ6-qn-FKL"/>
+                    <tabBarItem key="tabBarItem" title="SYNA" image="user-groups" id="EZ6-qn-FKL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="olW-JC-QM2">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -2319,8 +2319,8 @@ Rockville, MD 20852
         <image name="live" width="25" height="25"/>
         <image name="location" width="100" height="100"/>
         <image name="restaurant" width="25" height="25"/>
-        <image name="second" width="30" height="30"/>
         <image name="skyscraper" width="25" height="25"/>
         <image name="user" width="37" height="37"/>
+        <image name="user-groups" width="25" height="25"/>
     </resources>
 </document>
