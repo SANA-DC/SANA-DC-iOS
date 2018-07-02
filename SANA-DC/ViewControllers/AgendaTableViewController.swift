@@ -317,3 +317,14 @@ struct Session:Codable {
     var featuring:String?
     var endTime:String?
 }
+
+struct SessionSYNA:Codable {
+    var session:String?
+    var startTime:String?
+    var endTime:String?
+    var room:String?
+    var category:String?
+    var lead:String?
+    var featuring:String?
+    var descriptionOfSession:String?
+}

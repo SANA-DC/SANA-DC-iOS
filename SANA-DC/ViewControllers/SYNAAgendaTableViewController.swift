@@ -12,35 +12,42 @@ class SYNAAgendaTableViewController: UITableViewController {
 
     //var data:ScheduleResponse?
     
-    var day1Array = [Session]()
-    var day2Array = [Session]()
-    var day3Array = [Session]()
+    var day1Array = [SessionSYNA]()
+    var day2Array = [SessionSYNA]()
+    var day3Array = [SessionSYNA]()
     
     
-    var sessionSelected:Session?
+    var sessionSelected:SessionSYNA?
     var daySelected:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let session1Day1 = Session(category: "Youth", startTime: "08:00", lead: "Khulda", room: "Larkana", session: "Registration", featuring: "", endTime: "09:30")
+        let session1Day1 = SessionSYNA(session: "Youth Registration", startTime: "6:00 pm", endTime: "9:00 pm", room: "", category: "Registration", lead: "", featuring: "", descriptionOfSession: "")
         
-         let session2Day1 = Session(category: "Youth", startTime: "09:00", lead: "Khulda", room: "Larkana", session: "Icebreakers/Games", featuring: "", endTime: "09:30")
+         let session2Day1 = SessionSYNA(session: "Icebreakers", startTime: "8:00 pm", endTime: "10:00 pm", room: "White Oak A & B", category: "Registration", lead: "", featuring: "", descriptionOfSession: "An introduction to the weekend \nIcebreakers & Games\nFor ages 12 and younger: Face painting and balloon animals!")
         
-        let session1Day2 = Session(category: "Youth", startTime: "09:00", lead: "Khulda", room: "", session: "White House Tour\nTour of National Mall", featuring: "", endTime: "04:00")
+        let session1Day2 = SessionSYNA(session: "Meet in the lobby for check-in!", startTime: "8:45 am", endTime: "N/A", room: "", category: "Registration", lead: "", featuring: "", descriptionOfSession: "")
 
-        let session2Day2 = Session(category: "Youth", startTime: "08:00", lead: "Khulda", room: "", session: "Dinner", featuring: "", endTime: "10:00")
+        let session2Day2 = SessionSYNA(session: "DC Tour", startTime: "9:00 am", endTime: "4:00 pm", room: "", category: "Registration", lead: "", featuring: "", descriptionOfSession: "A tour of Capitol Hill and the National Mall - feel free to explore the monuments, take a trip to the museums, or stop at a food truck for a bite to eat!")
         
-        let session3Day2 = Session(category: "Youth", startTime: "10:00", lead: "Khulda", room: "", session: "Youth Program", featuring: "", endTime: "11:00")
+        let session3Day2 = SessionSYNA(session: "Youth Hour", startTime: "9:00 pm", endTime: "10:00 pm", room: "Banquet Hall", category: "Registration", lead: "", featuring: "", descriptionOfSession: "Various performers and speeches from the Youth.\nWelcome Dance - Numrah Shaikh \nSpeech - Saad Ahmed Abbasi\nSkit\nSinging - Risha Shaikh\nRecognition of SYNA over the years - Sabrina Lakho\nPoetry Game - Will require audience participation!")
         
-        let session1Day3 = Session(category: "Youth", startTime: "10:00", lead: "Khulda", room: "", session: "Youth Program", featuring: "", endTime: "11:45pm")
+        let session1Day3 = SessionSYNA(session: "Interactive Panel with Saif Samejho", startTime: "10 am", endTime: "11 am", room: "White Oak", category: "Registration", lead: "", featuring: "", descriptionOfSession: "Interactive panel surrounding current issues in Sindh using music as a medium to create awareness. Open to everyone at SANA!")
 
+        let session2Day3 = SessionSYNA(session: "Career Panel", startTime: "11 am", endTime: "1 pm", room: "White Oak", category: "Registration", lead: "", featuring: "", descriptionOfSession: "Panel for high school and College/University students to talk about their experiences in their respective career path\nBusiness/nSocial Work\nMental Health therapist\nMedicine/Bio\nArt/Music\nCriminal Justice/Law\nEngineering")
+        
+        let session3Day3 = SessionSYNA(session: "Masquerade Ball - Dessert Banquet!", startTime: "10:00 pm", endTime: "Midnight", room: "White Oak", category: "Registration", lead: "", featuring: "", descriptionOfSession: "")
+        
         day1Array.append(session1Day1)
         day1Array.append(session2Day1)
         day2Array.append(session1Day2)
         day2Array.append(session2Day2)
         day2Array.append(session3Day2)
         day3Array.append(session1Day3)
+        day3Array.append(session2Day3)
+        day3Array.append(session3Day3)
+
 
     }
     
@@ -153,7 +160,7 @@ class SYNAAgendaTableViewController: UITableViewController {
             break
         }
         
-        //self.performSegue(withIdentifier: "ToScheduleDeatilVC", sender: self)
+        self.performSegue(withIdentifier: "SYNADetailSchedule", sender: self)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -167,7 +174,7 @@ class SYNAAgendaTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        if let destinationVC = segue.destination as? ScheduleDetailViewController{
+        if let destinationVC = segue.destination as? SYNAScheduleDetailViewController{
             destinationVC.session = self.sessionSelected
             destinationVC.day = self.daySelected
         }

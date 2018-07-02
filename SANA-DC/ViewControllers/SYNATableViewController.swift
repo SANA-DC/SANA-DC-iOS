@@ -29,9 +29,10 @@ class SYNATableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{
             self.performSegue(withIdentifier: "toAgenda", sender: self)
-        } else{
+        } else if indexPath.row == 1 {
             self.performSegue(withIdentifier: "toVoting", sender: self)
-
+        } else if indexPath.row == 2{
+            self.performSegue(withIdentifier: "SYNAContactInfo", sender: self)
         }
     }
     
